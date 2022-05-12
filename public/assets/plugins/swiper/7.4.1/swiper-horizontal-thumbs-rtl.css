@@ -1,0 +1,10 @@
+
+/* Main gallery navigation buttons */
+.main-gallery .swiper-button-prev:after {
+	content: '\f054';
+	right: 0;
+}
+.main-gallery .swiper-button-next:after {
+	content: '\f053';
+	left: 0;
+}

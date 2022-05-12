@@ -1,0 +1,62 @@
+{
+    "name": "laravel-notification-channels/twilio",
+    "description": "Provides Twilio notification channel for Laravel",
+    "keywords": ["laravel", "twilio", "notification", "sms", "call", "mms"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/laravel-notification-channels/twilio/issues",
+        "source": "https://github.com/laravel-notification-channels/twilio"
+    },
+    "authors": [
+        {
+            "name": "Gregorio Hernández Caso",
+            "email": "gregoriohc@gmail.com",
+            "homepage": "https://github.com/gregoriohc",
+            "role": "Developer"
+        },
+        {
+            "name": "atymic",
+            "email": "atymicq@gmail.com",
+            "homepage": "https://atymic.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2|^8.0",
+        "twilio/sdk": "~6.0",
+        "illuminate/notifications": "^5.8 || ^6.0 || ^7.0 || ^8.0 || ^9.0",
+        "illuminate/support": "^5.8 || ^6.0 || ^7.0 || ^8.0 || ^9.0",
+        "illuminate/events": "^5.8 || ^6.0 || ^7.0 || ^8.0 || ^9.0",
+        "illuminate/queue": "^5.8 || ^6.0 || ^7.0 || ^8.0 || ^9.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.3",
+        "phpunit/phpunit": "^8.5|^9.5",
+        "orchestra/testbench": "^3|^4|^5|^6|^7"
+    },
+    "autoload": {
+        "psr-4": {
+            "NotificationChannels\\Twilio\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NotificationChannels\\Twilio\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test:unit": "phpunit --verbose --testsuite Unit",
+        "test:integration": "phpunit --verbose --testsuite Integration"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NotificationChannels\\Twilio\\TwilioProvider"
+            ]
+        }
+    }
+}

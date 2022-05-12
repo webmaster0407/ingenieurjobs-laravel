@@ -1,0 +1,1 @@
+<textarea  {{ isset($readonly) ? "readonly='readonly'" : "" }} id="{{ $name }}" type="text" name="{{ $name }}" class="form-control{{ $varNameError ?? '' }}{{ $classes }} {{ isset($class) ? $class : "" }}">{{ isset($value) ? $value : "" }}</textarea>

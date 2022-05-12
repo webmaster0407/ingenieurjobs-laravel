@@ -1,0 +1,20 @@
+
+/* Main gallery */
+.main-gallery {
+	float: left;
+}
+
+/* Main gallery navigation buttons */
+.main-gallery .swiper-button-prev:after {
+	content: '\f054';
+}
+.main-gallery .swiper-button-next:after {
+	content: '\f053';
+}
+
+/* Thumbnails gallery */
+.thumbs-gallery {
+	float: right;
+	margin-left: unset;
+	margin-right: 20px;
+}

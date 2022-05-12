@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Paypal Documentation</title>
+	<style>
+		body {
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+		
+		hr {
+			border-top: 1px solid #8c8b8b;
+		}
+		
+		#content {
+			background-color: #ffffff;
+			margin-left: auto;
+			margin-right: auto;
+			width: 900px;
+			padding: 20px;
+		}
+		
+		pre {
+			font-family: "Courier 10 Pitch", Courier, monospace;
+			font-size: 14px;
+			line-height: 140%;
+			white-space: pre;
+			white-space: pre-wrap;
+			white-space: -moz-pre-wrap;
+			white-space: -o-pre-wrap;
+		}
+		
+		code {
+			font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+			font-size: 13px;
+			line-height: 140%;
+			white-space: pre;
+			white-space: pre-wrap;
+			white-space: -moz-pre-wrap;
+			white-space: -o-pre-wrap;
+			background: #faf8f0;
+			padding: 5px;
+		}
+		
+		li {
+			line-height: 140%;
+		}
+	</style>
+</head>
+
+<body>
+<div id="content">
+	<h2>DOCUMENTATION</h2>
+	<hr>
+	<br>
+	Paypal (v1.8) plugin for <a href="https://1.envato.market/30rEB" target="_blank">LaraClassified</a> and <a
+		href="https://1.envato.market/Ld3mZ" target="_blank">JobClass</a>.
+	
+	<h3>Installation</h3>
+	To install this plugin:
+	
+	<ul>
+		<li>Copy the plugin's (uncompressed) folder into the script's plugins folder like this: <code>/extras/plugins/paypal/</code></li>
+		<li>Go to your Admin panel &rarr; Plugins (and click on "Install") to install it.</li>
+	</ul>
+	
+	<h3>Compatibility</h3>
+	<ul>
+		<li>v1.8 => LaraClassified (Latest Version) and JobClass (Latest Version)</li>
+	</ul>
+	
+	<h3>Update</h3>
+	Replace all the plugin's files on your server.
+	
+	<h3>Configuration</h3>
+	<h5>Setting up credentials</h5>
+	<ul>
+		<li>Get client ID and client secret by going to: <a href="https://developer.paypal.com/developer/applications" target="_blank" rel="noopener noreferrer">https://developer
+			.paypal.com/developer/applications</a> and generating a REST API app. Get Client ID and Secret from there.</li>
+		<li>Copy and paste the API client-id, and client-secret into the /.env file like this:</li>
+	</ul>
+	
+	<pre>
+PAYPAL_MODE=your-paypal-mode
+PAYPAL_CLIENT_ID=your-paypal-client-id
+PAYPAL_CLIENT_SECRET=your-paypal-client-secret
+    </pre>
+	
+	<h3>Translation</h3>
+	To translate this plugin into your language:
+	
+	<ul>
+		<li>Go to the languages folder at <code>/extras/plugins/paypal/resources/lang/</code></li>
+		<li>Duplicate the folder <code>/extras/plugins/paypal/resources/lang/en/</code> to <code>/extras/plugins/paypal/resources/lang/&lt;abbr&gt;/</code>
+			<br>NOTE: Don't forget replace <code>&lt;abbr&gt;</code> by your language code (e.g. "de" for German language).
+		</li>
+		<li>Open the file <code>/extras/plugins/paypal/resources/lang/&lt;abbr&gt;/messages.php</code> and translate it.
+			<br>NOTE: To translate the file, you must change the values and not the keys of PHP array.
+		</li>
+	</ul>
+	
+	<h3>Uninstallation</h3>
+	To uninstall this plugin, go to your Admin panel &rarr; Plugins (and click on "Uninstall") to uninstall it.
+	
+	<h3>Removing</h3>
+	To remove this plugin:
+	
+	<ul>
+		<li>Uninstall it</li>
+		<li>Go in the folder <code>/extras/plugins/</code> and remove the folder <code>paypal/</code>.</li>
+	</ul>
+</div>
+</body>
+
+</html>

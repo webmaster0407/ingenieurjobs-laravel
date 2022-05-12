@@ -1,0 +1,48 @@
+{
+  "name": "torann/laravel-meta-tags",
+  "keywords": [
+    "meta tags",
+    "meta",
+    "tags",
+    "head",
+    "laravel"
+  ],
+  "description": "A package to manage Header Meta Tags",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Lito",
+      "email": "lito@eordes.com"
+    },
+    {
+      "name": "Daniel Stainback",
+      "email": "daniel@lyften.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "illuminate/http": ">=5.1",
+    "illuminate/support": ">=5.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~5.0",
+    "mockery/mockery": "^0.9.4",
+    "phpstan/phpstan": "^0.12.14",
+    "squizlabs/php_codesniffer": "^3.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Torann\\LaravelMetaTags\\": "src/Torann/LaravelMetaTags/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Torann\\LaravelMetaTags\\MetaTagsServiceProvider"
+      ],
+      "aliases": {
+        "MetaTag": "Torann\\LaravelMetaTags\\Facades\\MetaTag"
+      }
+    }
+  }
+}

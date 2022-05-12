@@ -1,0 +1,9 @@
+/*
+ * RTL for Vertical Thumbnails
+ * Complete the bxslider-vertical.css file
+ */
+
+.gallery-container .bxslider-pager {
+	right: unset;
+	left: 0;
+}

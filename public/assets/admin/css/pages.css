@@ -1,0 +1,1236 @@
+/*******************************/
+/*******************************/
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");
+/*Theme Colors*/
+/*Topbar Colors*/
+/*Sidebar Colors*/
+/*Boxed layout width*/
+/*Shadow*/
+/*transitions*/
+/*Dark transparent bg*/
+/*******************************/
+/*******************************/
+/**
+ * Table Of Content
+ *
+ *  1. Color system
+ *  2. Options
+ *  3. Body
+ *  4. Typography
+ *  5. Breadcrumbs
+ *  6. Cards
+ *  7. Dropdowns
+ *  8. Buttons
+ *  9. Typography
+ *  10. Progress bars
+ *  11. Tables
+ *  12. Forms
+ *  14. Component
+ */
+/*******************
+ Campaign
+*******************/
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");
+.campaign {
+  position: relative;
+  height: 250px; }
+  .campaign .ct-series-a .ct-area {
+    fill-opacity: 0.2;
+    fill: url(#gradient); }
+  .campaign .ct-series-a .ct-line, .campaign .ct-series-a .ct-point {
+    stroke: #4fc3f7;
+    stroke-width: 2px; }
+  .campaign .ct-series-b .ct-area {
+    fill: #7460ee;
+    fill-opacity: 0.1; }
+  .campaign .ct-series-b .ct-line, .campaign .ct-series-b .ct-point {
+    stroke: #7460ee;
+    stroke-width: 2px; }
+  .campaign .ct-series-a .ct-point, .campaign .ct-series-b .ct-point {
+    stroke-width: 6px; }
+
+/*******************************/
+/*******************************/
+/*Theme Colors*/
+/*Topbar Colors*/
+/*Sidebar Colors*/
+/*Boxed layout width*/
+/*Shadow*/
+/*transitions*/
+/*Dark transparent bg*/
+/*******************************/
+/*******************************/
+/**
+ * Table Of Content
+ *
+ *  1. Color system
+ *  2. Options
+ *  3. Body
+ *  4. Typography
+ *  5. Breadcrumbs
+ *  6. Cards
+ *  7. Dropdowns
+ *  8. Buttons
+ *  9. Typography
+ *  10. Progress bars
+ *  11. Tables
+ *  12. Forms
+ *  14. Component
+ */
+/*******************
+ Campaign
+*******************/
+.earningsbox .c3-line {
+  stroke-width: 2px; }
+
+.product-sales.c3 line, .product-sales.c3 path {
+  stroke: #e9ecef; }
+
+.product-sales .c3-shape {
+  stroke: #fff !important;
+  stroke-width: 3px; }
+
+/*******************************/
+/*******************************/
+/*Theme Colors*/
+/*Topbar Colors*/
+/*Sidebar Colors*/
+/*Boxed layout width*/
+/*Shadow*/
+/*transitions*/
+/*Dark transparent bg*/
+/*******************************/
+/*******************************/
+/**
+ * Table Of Content
+ *
+ *  1. Color system
+ *  2. Options
+ *  3. Body
+ *  4. Typography
+ *  5. Breadcrumbs
+ *  6. Cards
+ *  7. Dropdowns
+ *  8. Buttons
+ *  9. Typography
+ *  10. Progress bars
+ *  11. Tables
+ *  12. Forms
+ *  14. Component
+ */
+/*******************
+ Campaign
+*******************/
+.e-campaign .css-bar .data-text {
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  z-index: 200;
+  right: 0;
+  top: 70px;
+  text-align: center; }
+  .e-campaign .css-bar .data-text .success-rate {
+    font-size: 60px; }
+  .e-campaign .css-bar .data-text .rate-label {
+    margin-top: -20px; }
+
+.e-campaign .c-cost {
+  padding: 10px 20px;
+  border: 1px solid #e9ecef;
+  border-radius: 5px; }
+  .e-campaign .c-cost i {
+    font-size: 48px; }
+
+.poll-widget .collapsible {
+  border: none;
+  box-shadow: none; }
+  .poll-widget .collapsible .collapsible-header,
+  .poll-widget .collapsible .collapsible-body {
+    border-bottom: none;
+    padding: 1rem 0; }
+
+#calendar .fc-toolbar {
+  padding: 0px 15px 24px; }
+
+.jvectormap-zoomout,
+.jvectormap-zoomin {
+  display: none; }
+
+@media (max-width: 767px) {
+  .e-campaign .c-cost {
+    margin: 0 auto;
+    width: 100%; }
+  .e-campaign .stats {
+    text-align: center; } }
+
+.css-bar-xlg {
+  width: 223px;
+  height: 223px;
+  font-size: 20px; }
+
+.css-bar-xlg:after,
+.css-bar-xlg > img {
+  width: 213px;
+  height: 213px;
+  margin-left: 5px;
+  margin-top: 5px;
+  line-height: 30px; }
+
+/*******************************/
+/*******************************/
+/*Theme Colors*/
+/*Topbar Colors*/
+/*Sidebar Colors*/
+/*Boxed layout width*/
+/*Shadow*/
+/*transitions*/
+/*Dark transparent bg*/
+/*******************************/
+/*******************************/
+/**
+ * Table Of Content
+ *
+ *  1. Color system
+ *  2. Options
+ *  3. Body
+ *  4. Typography
+ *  5. Breadcrumbs
+ *  6. Cards
+ *  7. Dropdowns
+ *  8. Buttons
+ *  9. Typography
+ *  10. Progress bars
+ *  11. Tables
+ *  12. Forms
+ *  14. Component
+ */
+.gredient-info-bg {
+  background: linear-gradient(to right, #41a6f6 0%, #425be0 100%); }
+
+.product-sales .c3-shape {
+  stroke: transparent !important;
+  stroke-width: 3px; }
+
+/*******************
+Earnings
+*******************/
+.earnings {
+  position: relative;
+  height: 250px; }
+  .earnings .ct-series-a .ct-area {
+    fill-opacity: 0.2;
+    fill: url(#gradient); }
+  .earnings .ct-series-a .ct-line,
+  .earnings .ct-series-a .ct-point {
+    stroke: #2962FF;
+    stroke-width: 2px; }
+  .earnings .ct-series-b .ct-area {
+    fill: #4fc3f7;
+    fill-opacity: 0.1; }
+  .earnings .ct-series-b .ct-line,
+  .earnings .ct-series-b .ct-point {
+    stroke: #4fc3f7;
+    stroke-width: 2px; }
+  .earnings .ct-series-a .ct-point,
+  .earnings .ct-series-b .ct-point {
+    stroke-width: 6px; }
+
+.ct-grid {
+  stroke-width: 0.3px;
+  stroke-dasharray: 0px; }
+
+.ct-series-a .ct-bar {
+  stroke: #2962FF; }
+
+@media (max-width: 1023px) {
+  .gredient-info-bg .info {
+    margin-top: 15px; } }
+
+/*******************************/
+/*******************************/
+/*Theme Colors*/
+/*Topbar Colors*/
+/*Sidebar Colors*/
+/*Boxed layout width*/
+/*Shadow*/
+/*transitions*/
+/*Dark transparent bg*/
+/*******************************/
+/*******************************/
+/**
+ * Table Of Content
+ *
+ *  1. Color system
+ *  2. Options
+ *  3. Body
+ *  4. Typography
+ *  5. Breadcrumbs
+ *  6. Cards
+ *  7. Dropdowns
+ *  8. Buttons
+ *  9. Typography
+ *  10. Progress bars
+ *  11. Tables
+ *  12. Forms
+ *  14. Component
+ */
+.ct-series-a .ct-bar {
+  stroke: #2962FF; }
+
+.ct-series-b .ct-bar {
+  stroke: #4fc3f7; }
+
+@media (max-width: 767px) {
+  .ct-bar {
+    stroke-width: 10px !important; } }
+
+/*******************************/
+/*******************************/
+/*Theme Colors*/
+/*Topbar Colors*/
+/*Sidebar Colors*/
+/*Boxed layout width*/
+/*Shadow*/
+/*transitions*/
+/*Dark transparent bg*/
+/*******************************/
+/*******************************/
+/**
+ * Table Of Content
+ *
+ *  1. Color system
+ *  2. Options
+ *  3. Body
+ *  4. Typography
+ *  5. Breadcrumbs
+ *  6. Cards
+ *  7. Dropdowns
+ *  8. Buttons
+ *  9. Typography
+ *  10. Progress bars
+ *  11. Tables
+ *  12. Forms
+ *  14. Component
+ */
+.auth-wrapper {
+  min-height: 100vh;
+  position: relative; }
+  .auth-wrapper .auth-box {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+    max-width: 400px;
+    width: 90%;
+    margin: 10% 0; }
+    .auth-wrapper .auth-box .logo {
+      text-align: center; }
+    .auth-wrapper .auth-box.on-sidebar {
+      top: 0px;
+      right: 0px;
+      height: 100%;
+      margin: 0px;
+      position: absolute; }
+  .auth-wrapper #recoverform {
+    display: none; }
+  .auth-wrapper .auth-sidebar {
+    position: fixed;
+    height: 100%;
+    right: 0px;
+    overflow: auto;
+    margin: 0px;
+    top: 0px; }
+
+@media (max-width: 767px) {
+  .auth-wrapper .auth-sidebar {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    margin: 40px 0 60px; }
+  .auth-wrapper .demo-text {
+    margin-top: 30px; } }
+
+/*******************************/
+/*******************************/
+/*Theme Colors*/
+/*Topbar Colors*/
+/*Sidebar Colors*/
+/*Boxed layout width*/
+/*Shadow*/
+/*transitions*/
+/*Dark transparent bg*/
+/*******************************/
+/*******************************/
+/**
+ * Table Of Content
+ *
+ *  1. Color system
+ *  2. Options
+ *  3. Body
+ *  4. Typography
+ *  5. Breadcrumbs
+ *  6. Cards
+ *  7. Dropdowns
+ *  8. Buttons
+ *  9. Typography
+ *  10. Progress bars
+ *  11. Tables
+ *  12. Forms
+ *  14. Component
+ */
+.email-app {
+  position: relative; }
+  .email-app .list-group .list-group-item {
+    padding: 0px;
+    background: transparent;
+    border: none; }
+    .email-app .list-group .list-group-item .list-group-item-action {
+      padding: 12px 15px;
+      display: block;
+      color: #3e5569; }
+      .email-app .list-group .list-group-item .list-group-item-action .mdi {
+        font-size: 18px;
+        vertical-align: middle;
+        margin-right: 5px; }
+      .email-app .list-group .list-group-item .list-group-item-action:hover, .email-app .list-group .list-group-item .list-group-item-action.active {
+        background: rgba(0, 0, 0, 0.03); }
+  .email-app .email-table {
+    table-layout: fixed; }
+    .email-app .email-table .selected {
+      background: #fff8e1; }
+    .email-app .email-table .max-texts,
+    .email-app .email-table .user-name h6 {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .email-app .email-table .max-texts {
+      padding: 1rem 5px; }
+    .email-app .email-table .chb {
+      width: 50px; }
+    .email-app .email-table .time {
+      width: 100px;
+      text-align: right; }
+    .email-app .email-table .starred,
+    .email-app .email-table .clip {
+      width: 25px;
+      padding: 1rem 5px; }
+    .email-app .email-table .user-image {
+      width: 45px;
+      padding: 1rem 5px; }
+    .email-app .email-table .user-name {
+      width: 130px;
+      padding: 1rem 5px; }
+      .email-app .email-table .user-name .m-b-0 {
+        font-weight: 300; }
+    .email-app .email-table .unread .m-b-0,
+    .email-app .email-table .unread .max-texts {
+      font-weight: 600; }
+
+@media (max-width: 767px) {
+  .email-table {
+    min-width: 500px; } }
+
+/*******************************/
+/*******************************/
+/*Theme Colors*/
+/*Topbar Colors*/
+/*Sidebar Colors*/
+/*Boxed layout width*/
+/*Shadow*/
+/*transitions*/
+/*Dark transparent bg*/
+/*******************************/
+/*******************************/
+/**
+ * Table Of Content
+ *
+ *  1. Color system
+ *  2. Options
+ *  3. Body
+ *  4. Typography
+ *  5. Breadcrumbs
+ *  6. Cards
+ *  7. Dropdowns
+ *  8. Buttons
+ *  9. Typography
+ *  10. Progress bars
+ *  11. Tables
+ *  12. Forms
+ *  14. Component
+ */
+.lobilists .lobilist {
+  box-shadow: none; }
+
+.lobilists .lobilist.lobilist-primary {
+  border-color: #e9ecef; }
+  .lobilists .lobilist.lobilist-primary .lobilist-header,
+  .lobilists .lobilist.lobilist-primary .lobilist-footer,
+  .lobilists .lobilist.lobilist-primary .lobilist-form-footer {
+    border-color: #7460ee;
+    background-color: #7460ee; }
+
+.lobilists .lobilist.lobilist-danger {
+  border-color: #e9ecef; }
+  .lobilists .lobilist.lobilist-danger .lobilist-header,
+  .lobilists .lobilist.lobilist-danger .lobilist-footer,
+  .lobilists .lobilist.lobilist-danger .lobilist-form-footer {
+    border-color: #f62d51;
+    background-color: #f62d51; }
+
+.lobilists .lobilist.lobilist-info {
+  border-color: #e9ecef; }
+  .lobilists .lobilist.lobilist-info .lobilist-header,
+  .lobilists .lobilist.lobilist-info .lobilist-footer,
+  .lobilists .lobilist.lobilist-info .lobilist-form-footer {
+    border-color: #2962FF;
+    background-color: #2962FF; }
+
+.lobilists .lobilist.lobilist-success {
+  border-color: #e9ecef; }
+  .lobilists .lobilist.lobilist-success .lobilist-header,
+  .lobilists .lobilist.lobilist-success .lobilist-footer {
+    border-color: #36bea6;
+    background-color: #36bea6; }
+
+.lobilists .lobilist-footer,
+.lobilists .lobilist-form-footer {
+  border-color: #e9ecef !important;
+  background: rgba(0, 0, 0, 0.02) !important; }
+
+.lobilists .btn-link {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  color: #343a40 !important; }
+
+.lobilists.single-line {
+  height: 500px; }
+
+.lobilist,
+.lobilists {
+  position: relative; }
+
+.lobilists [type="checkbox"]:not(:checked),
+.lobilists [type="checkbox"]:checked {
+  opacity: 1;
+  position: relative; }
+
+.lobilists .lobilist-item {
+  margin-bottom: 16px;
+  padding-top: 5px; }
+
+.lobilists .lobilist-item-title {
+  color: #343a40; }
+
+.lobilists .lobilist-item-description {
+  font-style: normal;
+  font-size: 13px; }
+
+.lobilists .lobilist-check {
+  top: 10px; }
+
+.lobilists .lobilist-item-duedate {
+  position: relative;
+  font-size: 12px;
+  left: 0px; }
+
+.lobilists .lobilist-actions {
+  top: 0px; }
+
+.lobilist-actions .btn i {
+  font-size: 15px;
+  vertical-align: middle; }
+
+/*******************************/
+/*******************************/
+/*Theme Colors*/
+/*Topbar Colors*/
+/*Sidebar Colors*/
+/*Boxed layout width*/
+/*Shadow*/
+/*transitions*/
+/*Dark transparent bg*/
+/*******************************/
+/*******************************/
+/**
+ * Table Of Content
+ *
+ *  1. Color system
+ *  2. Options
+ *  3. Body
+ *  4. Typography
+ *  5. Breadcrumbs
+ *  6. Cards
+ *  7. Dropdowns
+ *  8. Buttons
+ *  9. Typography
+ *  10. Progress bars
+ *  11. Tables
+ *  12. Forms
+ *  14. Component
+ */
+.twitter-typeahead {
+  width: 100%; }
+
+.twitter-typeahead .tt-menu {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #f8f9fa;
+  border-radius: 5px;
+  padding: .75rem 0; }
+
+.twitter-typeahead .tt-menu .tt-suggestion {
+  padding: .25rem .75rem;
+  cursor: pointer; }
+
+.twitter-typeahead .tt-menu .tt-suggestion:hover {
+  background-color: #7460ee;
+  color: #fff; }
+
+.twitter-typeahead .empty-message {
+  padding: 5px 10px;
+  text-align: center; }
+
+.twitter-typeahead .rtl-typeahead .tt-menu {
+  text-align: right; }
+
+.twitter-typeahead .league-name {
+  margin: 0 10px 5px;
+  padding: 7px 5px 10px;
+  border-bottom: 1px solid #e9ecef; }
+
+.scrollable-dropdown .twitter-typeahead .tt-menu {
+  max-height: 80px;
+  overflow-y: auto; }
+
+.bootstrap-maxlength {
+  margin-top: .5rem; }
+
+/*
+Template Name: Admin Template
+Author: Wrappixel
+
+File: scss
+*/
+/*******************************/
+/*******************************/
+/*Theme Colors*/
+/*Topbar Colors*/
+/*Sidebar Colors*/
+/*Boxed layout width*/
+/*Shadow*/
+/*transitions*/
+/*Dark transparent bg*/
+/*******************************/
+/*******************************/
+/**
+ * Table Of Content
+ *
+ *  1. Color system
+ *  2. Options
+ *  3. Body
+ *  4. Typography
+ *  5. Breadcrumbs
+ *  6. Cards
+ *  7. Dropdowns
+ *  8. Buttons
+ *  9. Typography
+ *  10. Progress bars
+ *  11. Tables
+ *  12. Forms
+ *  14. Component
+ */
+/*******************
+User card page
+******************/
+.el-element-overlay .white-box {
+  padding: 0px; }
+
+.el-element-overlay .el-card-item {
+  position: relative;
+  padding-bottom: 20px; }
+  .el-element-overlay .el-card-item .el-card-avatar {
+    margin-bottom: 20px; }
+  .el-element-overlay .el-card-item .el-card-content {
+    text-align: center; }
+  .el-element-overlay .el-card-item .el-overlay-1 {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default; }
+    .el-element-overlay .el-card-item .el-overlay-1 img {
+      display: block;
+      position: relative;
+      -webkit-transition: all .4s linear;
+      transition: all .4s linear;
+      width: 100%;
+      height: auto; }
+    .el-element-overlay .el-card-item .el-overlay-1:hover img {
+      -ms-transform: scale(1.2) translateZ(0);
+      -webkit-transform: scale(1.2) translateZ(0);
+      /* transform: scale(1.2) translateZ(0); */ }
+    .el-element-overlay .el-card-item .el-overlay-1 .el-info {
+      text-decoration: none;
+      display: inline-block;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: transparent;
+      filter: alpha(opacity=0);
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+      padding: 0;
+      margin: auto;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%) translateZ(0);
+      -webkit-transform: translateY(-50%) translateZ(0);
+      -ms-transform: translateY(-50%) translateZ(0); }
+      .el-element-overlay .el-card-item .el-overlay-1 .el-info .el-item {
+        list-style: none;
+        display: inline-block;
+        margin: 0 3px; }
+        .el-element-overlay .el-card-item .el-overlay-1 .el-info .el-item .el-link {
+          border-color: #fff;
+          color: #fff;
+          padding: 12px 15px 10px; }
+          .el-element-overlay .el-card-item .el-overlay-1 .el-info .el-item .el-link:hover {
+            background: #2962FF;
+            border-color: #2962FF; }
+  .el-element-overlay .el-card-item .el-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out; }
+  .el-element-overlay .el-card-item .el-overlay-1:hover .el-overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0); }
+  .el-element-overlay .el-card-item .el-overlay-1 .scrl-dwn {
+    top: -100%; }
+  .el-element-overlay .el-card-item .el-overlay-1 .scrl-up {
+    top: 100%;
+    height: 0px; }
+  .el-element-overlay .el-card-item .el-overlay-1:hover .scrl-dwn {
+    top: 0px; }
+  .el-element-overlay .el-card-item .el-overlay-1:hover .scrl-up {
+    top: 0px;
+    height: 100%; }
+
+/*
+Template Name: Admin Template
+Author: Wrappixel
+
+File: scss
+*/
+/*******************************/
+/*******************************/
+/*Theme Colors*/
+/*Topbar Colors*/
+/*Sidebar Colors*/
+/*Boxed layout width*/
+/*Shadow*/
+/*transitions*/
+/*Dark transparent bg*/
+/*******************************/
+/*******************************/
+/**
+ * Table Of Content
+ *
+ *  1. Color system
+ *  2. Options
+ *  3. Body
+ *  4. Typography
+ *  5. Breadcrumbs
+ *  6. Cards
+ *  7. Dropdowns
+ *  8. Buttons
+ *  9. Typography
+ *  10. Progress bars
+ *  11. Tables
+ *  12. Forms
+ *  14. Component
+ */
+/*******************
+google map Page
+******************/
+.gmaps, .gmaps-panaroma {
+  height: 300px; }
+
+.gmaps, .gmaps-panaroma {
+  height: 300px;
+  background: #e9ecef;
+  border-radius: 2px; }
+
+.gmaps-overlay {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  line-height: 40px;
+  background: #2962FF;
+  border-radius: 4px;
+  padding: 10px 20px; }
+
+.gmaps-overlay_arrow {
+  left: 50%;
+  margin-left: -16px;
+  width: 0;
+  height: 0;
+  position: absolute; }
+
+.gmaps-overlay_arrow.above {
+  bottom: -15px;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 16px solid #2962FF; }
+
+.gmaps-overlay_arrow.below {
+  top: -15px;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-bottom: 16px solid #2962FF; }
+
+/*******************
+vector map Page
+******************/
+.jvectormap-zoomin, .jvectormap-zoomout {
+  width: 10px;
+  height: 10px;
+  line-height: 10px; }
+
+.jvectormap-zoomout {
+  top: 40px; }
+
+/*
+Template Name: Admin Template
+Author: Wrappixel
+
+File: scss
+*/
+/*******************************/
+/*******************************/
+/*Theme Colors*/
+/*Topbar Colors*/
+/*Sidebar Colors*/
+/*Boxed layout width*/
+/*Shadow*/
+/*transitions*/
+/*Dark transparent bg*/
+/*******************************/
+/*******************************/
+/**
+ * Table Of Content
+ *
+ *  1. Color system
+ *  2. Options
+ *  3. Body
+ *  4. Typography
+ *  5. Breadcrumbs
+ *  6. Cards
+ *  7. Dropdowns
+ *  8. Buttons
+ *  9. Typography
+ *  10. Progress bars
+ *  11. Tables
+ *  12. Forms
+ *  14. Component
+ */
+/*******************
+Timeline page
+******************/
+.timeline {
+  position: relative;
+  padding: 20px 0 20px;
+  list-style: none;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.timeline:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  margin-left: -1.5px;
+  background-color: #e9ecef; }
+
+.timeline > .timeline-item {
+  position: relative;
+  margin-bottom: 20px; }
+
+.timeline > .timeline-item:before,
+.timeline > .timeline-item:after {
+  content: " ";
+  display: table; }
+
+.timeline > .timeline-item:after {
+  clear: both; }
+
+.timeline > .timeline-item > .timeline-panel {
+  float: left;
+  position: relative;
+  width: 46%;
+  padding: 20px;
+  border: 1px solid #e9ecef;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05); }
+
+.timeline > .timeline-item > .timeline-panel:before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  top: 26px;
+  right: -8px;
+  border-top: 8px solid transparent;
+  border-right: 0 solid #e9ecef;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #e9ecef; }
+
+.timeline > .timeline-item > .timeline-panel:after {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  top: 27px;
+  right: -7px;
+  border-top: 7px solid transparent;
+  border-right: 0 solid #fff;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #fff; }
+
+.timeline > .timeline-item > .timeline-badge {
+  z-index: 10;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: -25px;
+  border-radius: 50% 50% 50% 50%;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 50px;
+  color: #fff;
+  overflow: hidden; }
+
+.timeline > .timeline-item.timeline-inverted > .timeline-panel {
+  float: right; }
+
+.timeline > .timeline-item.timeline-inverted > .timeline-panel:before {
+  right: auto;
+  left: -8px;
+  border-right-width: 8px;
+  border-left-width: 0; }
+
+.timeline > .timeline-item.timeline-inverted > .timeline-panel:after {
+  right: auto;
+  left: -7px;
+  border-right-width: 7px;
+  border-left-width: 0; }
+
+.timeline-badge.primary {
+  background-color: #7460ee; }
+
+.timeline-badge.success {
+  background-color: #36bea6; }
+
+.timeline-badge.warning {
+  background-color: #ffbc34; }
+
+.timeline-badge.danger {
+  background-color: #f62d51; }
+
+.timeline-badge.info {
+  background-color: #2962FF; }
+
+.timeline-title {
+  margin-top: 0;
+  color: inherit;
+  font-weight: 400; }
+
+.timeline-body > p,
+.timeline-body > ul {
+  margin-bottom: 0; }
+
+.timeline-left:before {
+  left: 30px; }
+
+.timeline-left > .timeline-item > .timeline-badge {
+  left: 30px;
+  top: 9px; }
+
+.timeline-left > .timeline-item > .timeline-panel {
+  width: calc(100% - 80px); }
+
+.timeline-right:before {
+  right: 30px;
+  left: auto; }
+
+.timeline-right > .timeline-item > .timeline-badge {
+  right: 5px;
+  top: 9px;
+  left: auto; }
+
+.timeline-right > .timeline-item > .timeline-panel {
+  width: calc(100% - 80px); }
+
+/*******************
+Horizontal Timeline page
+******************/
+.cd-horizontal-timeline .events a {
+  padding-bottom: 6px;
+  color: #2962FF; }
+
+.cd-horizontal-timeline .filling-line,
+.cd-horizontal-timeline .events a.selected::after {
+  background: #2962FF; }
+
+.cd-horizontal-timeline .events a.selected::after {
+  border-color: #2962FF; }
+
+.cd-horizontal-timeline .m-t-40 {
+  margin-top: 40px !important; }
+
+/*******************************/
+/*******************************/
+/*Theme Colors*/
+/*Topbar Colors*/
+/*Sidebar Colors*/
+/*Boxed layout width*/
+/*Shadow*/
+/*transitions*/
+/*Dark transparent bg*/
+/*******************************/
+/*******************************/
+/**
+ * Table Of Content
+ *
+ *  1. Color system
+ *  2. Options
+ *  3. Body
+ *  4. Typography
+ *  5. Breadcrumbs
+ *  6. Cards
+ *  7. Dropdowns
+ *  8. Buttons
+ *  9. Typography
+ *  10. Progress bars
+ *  11. Tables
+ *  12. Forms
+ *  14. Component
+ */
+.dd {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 600px;
+  list-style: none;
+  font-size: 13px;
+  line-height: 20px; }
+
+.dd-list {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.dd-list .dd-list {
+  padding-left: 30px; }
+
+.dd-collapsed .dd-list {
+  display: none; }
+
+.dd-item,
+.dd-empty,
+.dd-placeholder {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 20px;
+  font-size: 13px;
+  line-height: 20px; }
+
+.dd-handle {
+  display: block;
+  height: 30px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  cursor: move;
+  color: #979898;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #e5e5e5;
+  background: #fafafa;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+.dd-handle:hover {
+  color: #317eeb;
+  background: #fff; }
+
+.dd-item > button {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  float: left;
+  width: 25px;
+  height: 20px;
+  margin: 5px 0;
+  padding: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 0;
+  background: transparent;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  font-weight: bold; }
+
+.dd-item > button:before {
+  content: '+';
+  display: block;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  text-indent: 0; }
+
+.dd-item > button[data-action="collapse"]:before {
+  content: '-'; }
+
+.dd-placeholder,
+.dd-empty {
+  margin: 5px 0;
+  padding: 0;
+  min-height: 30px;
+  background: #f5f5f5;
+  border: 1px dashed #b6bcbf;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+.dd-empty {
+  border: 1px dashed #bbb;
+  min-height: 100px;
+  background-color: #e5e5e5;
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px; }
+
+.dd-dragel {
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999; }
+
+.dd-dragel > .dd-item .dd-handle {
+  margin-top: 0; }
+
+.dd-dragel .dd-handle {
+  -webkit-box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.1); }
+
+.dd3-content {
+  display: block;
+  height: 30px;
+  margin: 5px 0;
+  padding: 5px 10px 5px 40px;
+  color: #979898;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #e5e5e5;
+  background: #fafafa;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+.dd3-content:hover {
+  color: #317eeb;
+  background: #fff; }
+
+.dd-dragel > .dd3-item > .dd3-content {
+  margin: 0; }
+
+.dd3-item > button {
+  margin-left: 30px; }
+
+.dd3-handle {
+  position: absolute;
+  margin: 0;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  width: 30px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background: #d5d5d5;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
+
+.dd3-handle:before {
+  content: "\f0c9";
+  font-family: 'Font Awesome 5 Free';
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  text-indent: 0;
+  font-size: 14px;
+  font-weight: 900;
+  color: #67757c;
+  top: 7px; }
+
+.dd3-handle:hover {
+  background: #404040;
+  border: 1px solid #404040; }
+
+.myadmin-dd .dd-list .dd-item .dd-handle {
+  background: #ffffff;
+  border: 1px solid rgba(120, 130, 140, 0.13);
+  padding: 8px 16px;
+  height: auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  border-radius: 0; }
+
+.myadmin-dd-empty .dd-list .dd3-content {
+  height: auto;
+  border: 1px solid rgba(120, 130, 140, 0.13);
+  padding: 8px 16px 8px 46px;
+  background: #ffffff;
+  font-weight: 400; }
+
+.myadmin-dd-empty .dd-list .dd3-handle {
+  border: 1px solid rgba(120, 130, 140, 0.13);
+  border-bottom: 0;
+  background: #ffffff;
+  height: 36px;
+  width: 36px; }
+
+.dd3-handle:before {
+  color: #67757c;
+  top: 7px; }

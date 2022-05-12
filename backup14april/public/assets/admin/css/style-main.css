@@ -1,0 +1,215 @@
+/*
+ * LaraClassifier - Classified Ads Web Application
+ * Copyright (c) BeDigit. All Rights Reserved
+ *
+ * Website: https://laraclassifier.com
+ *
+ * LICENSE
+ * -------
+ * This software is furnished under a license and may be used and copied
+ * only in accordance with the terms of such license and with the inclusion
+ * of the above copyright notice. If you Purchased from CodeCanyon,
+ * Please read the full License from here - http://codecanyon.net/licenses/standard
+ */
+
+/* Bootstrap Overwrites */
+.has-error .checkbox,
+.has-error .checkbox-inline,
+.has-error .control-label,
+.has-error .help-block,
+.has-error .radio,
+.has-error .radio-inline,
+.has-error.checkbox label,
+.has-error.checkbox-inline label,
+.has-error.radio label,
+.has-error.radio-inline label {
+	color: #dd4b39;
+}
+.table {
+	--bs-table-bg: transparent;
+	--bs-table-striped-color: #212529;
+	--bs-table-striped-bg: #f9f9f9;
+	--bs-table-active-color: #212529;
+	--bs-table-active-bg: rgba(0, 0, 0, 0.1);
+	--bs-table-hover-color: #212529;
+	--bs-table-hover-bg: #e9edf2;
+	color: #212529;
+	border-color: #e8eef3;
+}
+
+/*
+a.ajax-request,
+a.ajax-request:hover,
+a.ajax-request:active,
+a.ajax-request:focus {
+	color: #3c8dbc;
+}
+*/
+
+.pace .pace-activity {
+	display: none;
+}
+
+/* BORDER RADIUS HELPERS */
+
+.b-rad-sm {
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+.b-rad-md {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+.b-rad-lg {
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+}
+.no-border {
+	border: none !important;
+}
+
+/* BACKGROUND HELPERS (additional) */
+
+.bg-none {
+	background: none;
+}
+
+/* reCAPTCHA */
+.no-label .g-recaptcha div {
+	margin: auto;
+	text-align: center;
+}
+
+.admin-single-icon {
+	font-size: 20px;
+	vertical-align: middle;
+}
+
+table.dataTable tbody tr td {
+	vertical-align: middle;
+}
+
+.callout {
+	margin: 0 0 5px 0;
+}
+
+h2.setting-group-name, p.setting-group-breadcrumb {
+	margin: 0;
+	padding: 0 0 15px 0;
+	border-bottom: 1px solid #f4f4f4;
+}
+h2.setting-group-name {
+	font-weight: bold;
+}
+
+.backup-button {
+	margin-bottom: 5px;
+}
+
+.wordwrap {
+	white-space: pre-wrap; /* CSS3 */
+	white-space: -moz-pre-wrap; /* Firefox */
+	white-space: -pre-wrap; /* Opera <7 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word; /* IE */
+}
+
+/* Body Style */
+body {
+	font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.tooltip {
+	font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.popover {
+	font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	max-width: 450px;
+}
+
+/* Form Style */
+.page-wrapper .container-fluid .form-group label {
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+.form-control::-webkit-input-placeholder {
+	color: #cccccc;
+}
+
+/* Datatable Details Rows */
+#crudTable .table-striped tbody tr:nth-of-type(odd) {
+	background-color: #f6f6f6;
+}
+
+/* Settings Edition CSS */
+.settings-edition h3 {
+	margin-top: 35px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #f4f4f4;
+}
+.settings-edition > .card-body > .card > .row > div:nth-of-type(3) > h3 {
+	margin-top: 10px;
+}
+.settings-edition h4 {
+	margin-top: 15px;
+}
+.settings-edition h5 {
+	margin-top: 10px;
+}
+.settings-edition hr {
+	margin: 0;
+	padding: 0;
+	border-top-color: #f4f4f4;
+}
+
+/* Dropdown link color */
+.nav-item.dropdown.active > .dropdown-menu > .dropdown-item.active > a {
+	color: #FFF;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small {
+	font-size: .6em;
+	display: inline-block;
+	padding-left: .25em;
+}
+
+/* select2 - Tagging */
+.select2-container--classic .select2-selection--multiple .select2-selection__choice,
+.select2-container--default .select2-selection--multiple .select2-selection__choice,
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+	color: #444;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.form-control {
+	color: #222;
+}
+.form-control:focus {
+	color: #222;
+}
+
+/* select2 - Bootstrap validation error */
+.is-invalid .select2-selection {
+	border-color: #EF534F !important;
+}
+
+/* Bugfix: Bootstrap Tooltip position on Firefox */
+a[data-bs-toggle=tooltip] {
+	display: inline-block !important;
+}
+a[data-bs-toggle=tooltipHover] {
+	display: inline-block !important;
+}
+
+.pnotify-icon {
+	margin-top: 5px;
+}

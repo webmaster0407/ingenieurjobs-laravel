@@ -1,0 +1,27 @@
+User-agent: *
+Disallow:
+
+Allow: /
+
+User-agent: *
+Disallow: /admin/
+Disallow: /ajax/
+Disallow: /assets/
+Disallow: /css/
+Disallow: /js/
+Disallow: /vendor/
+Disallow: /main.php
+Disallow: /index.php
+Disallow: /mix-manifest.json
+Disallow: /lang/de
+Disallow: /lang/en
+Disallow: /lang/fr
+Disallow: /lang/es
+Disallow: /lang/ar
+Disallow: /auth/facebook
+Disallow: /auth/linkedin
+Disallow: /auth/twitter
+Disallow: /auth/google
+
+Sitemap: https://www.ingenieurjobs.com/bg/sitemaps.xml
+Sitemap: https://www.ingenieurjobs.com/de/sitemaps.xml

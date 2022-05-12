@@ -1,0 +1,4127 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "jobclass.laraclassifier.local"
+        }
+    ],
+    "info": {
+        "name": "JobClass API Reference",
+        "_postman_id": "fdf6b7ae-1bbe-4fe5-92f3-e3160ea80176",
+        "description": "JobClass API specification and documentation.",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Authentication",
+            "description": "",
+            "item": [
+                {
+                    "name": "Log in",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/auth\/login",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/auth\/login"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"login\": \"user@demosite.com\",\n    \"password\": \"123456\",\n    \"captcha_key\": \"quibusdam\"\n}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Log out",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/auth\/logout\/:userId",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/auth\/logout\/:userId",
+                            "variable": [
+                                {
+                                    "id": "userId",
+                                    "key": "userId",
+                                    "value": "4",
+                                    "description": "The ID of the user to logout."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Forgot password",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/auth\/password\/email",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/auth\/password\/email"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"login\": \"user@demosite.com\",\n    \"captcha_key\": \"tenetur\"\n}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Reset password token",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/auth\/password\/token",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/auth\/password\/token"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Reset password token verification",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Reset password",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/auth\/password\/reset",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/auth\/password\/reset"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"login\": \"john.doe@domain.tld\",\n    \"password\": \"js!X07$z61hLA\",\n    \"password_confirmation\": \"js!X07$z61hLA\",\n    \"captcha_key\": \"asperiores\"\n}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Captcha",
+            "description": "",
+            "item": [
+                {
+                    "name": "Get CAPTCHA",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/captcha",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/captcha"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Calling this endpoint is mandatory if the captcha is enabled in the Admin panel.\nReturn a JSON data with an 'img' item that contains the captcha image to show and a 'key' item that contains the generated key to send for validation.",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Categories",
+            "description": "",
+            "item": [
+                {
+                    "name": "List categories",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/categories",
+                            "query": [
+                                {
+                                    "key": "parentId",
+                                    "value": "0",
+                                    "description": "The ID of the parent category of the sub categories to retrieve.",
+                                    "disabled": true
+                                },
+                                {
+                                    "key": "embed",
+                                    "value": "null",
+                                    "description": "The Comma-separated list of the category relationships for Eager Loading - Possible values: parent,children.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "sort",
+                                    "value": "-lft",
+                                    "description": "The sorting parameter (Order by DESC with the given column. Use \"-\" as prefix to order by ASC). Possible values: lft.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "perPage",
+                                    "value": "2",
+                                    "description": "Items per page. Can be defined globally from the admin settings. Cannot be exceeded 100.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/categories?parentId=0&embed=null&sort=-lft&perPage=2"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get category",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/categories\/:slugOrId",
+                            "query": [
+                                {
+                                    "key": "parentCatSlug",
+                                    "value": "engineering",
+                                    "description": "The slug of the parent category to retrieve used when category's slug provided instead of ID.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/categories\/:slugOrId?parentCatSlug=engineering",
+                            "variable": [
+                                {
+                                    "id": "slugOrId",
+                                    "key": "slugOrId",
+                                    "value": "1",
+                                    "description": "The slug or ID of the category."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Get category by its unique slug or ID.",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Companies",
+            "description": "",
+            "item": [
+                {
+                    "name": "List companies",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/companies",
+                            "query": [
+                                {
+                                    "key": "sort",
+                                    "value": "created_at",
+                                    "description": "The sorting parameter (Order by DESC with the given column. Use \"-\" as prefix to order by ASC). Possible values: created_at, name.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "perPage",
+                                    "value": "2",
+                                    "description": "Items per page. Can be defined globally from the admin settings. Cannot be exceeded 100.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/companies?sort=created_at&perPage=2"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get company",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/companies\/:id",
+                            "query": [
+                                {
+                                    "key": "embed",
+                                    "value": "user",
+                                    "description": "The Comma-separated list of the company relationships for Eager Loading - Possible values: user.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/companies\/:id?embed=user",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "44",
+                                    "description": "The company's ID."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Store company",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/companies",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/companies"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": false
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update company",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/companies\/:id",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/companies\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "vel",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": false
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Delete company(ies)",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/companies\/:ids",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/companies\/:ids",
+                            "variable": [
+                                {
+                                    "id": "ids",
+                                    "key": "ids",
+                                    "value": "consequatur",
+                                    "description": "The ID or comma-separated IDs list of company(ies)."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Contact",
+            "description": "",
+            "item": [
+                {
+                    "name": "Send Form",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/contact",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/contact"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"first_name\": \"John\",\n    \"last_name\": \"Doe\",\n    \"email\": \"john.doe@domain.tld\",\n    \"message\": \"Nesciunt porro possimus maiores voluptatibus accusamus velit qui aspernatur.\",\n    \"country_code\": \"US\",\n    \"country_name\": \"United Sates\",\n    \"captcha_key\": \"ratione\"\n}"
+                        },
+                        "description": "Send a message to the site owner.",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Report post",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/posts\/:id\/report",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/posts\/:id\/report",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "7",
+                                    "description": "The post ID."
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"report_type_id\": 2,\n    \"email\": \"john.doe@domain.tld\",\n    \"message\": \"Et sunt voluptatibus ducimus id assumenda sint.\",\n    \"captcha_key\": \"repellendus\"\n}"
+                        },
+                        "description": "Report abuse or issues",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Send Post by Email",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/posts\/:id\/sendByEmail",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/posts\/:id\/sendByEmail",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "sed",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"sender_email\": \"john.doe@domain.tld\",\n    \"recipient_email\": \"foo@domain.tld\"\n}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Countries",
+            "description": "",
+            "item": [
+                {
+                    "name": "List countries",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/countries",
+                            "query": [
+                                {
+                                    "key": "embed",
+                                    "value": "null",
+                                    "description": "Comma-separated list of the country relationships for Eager Loading - Possible values: currency.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "sort",
+                                    "value": "-name",
+                                    "description": "The sorting parameter (Order by DESC with the given column. Use \"-\" as prefix to order by ASC). Possible values: name.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "perPage",
+                                    "value": "2",
+                                    "description": "Items per page. Can be defined globally from the admin settings. Cannot be exceeded 100.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/countries?embed=null&sort=-name&perPage=2"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get country",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/countries\/:code",
+                            "query": [
+                                {
+                                    "key": "embed",
+                                    "value": "currency",
+                                    "description": "Comma-separated list of the country relationships for Eager Loading - Possible values: currency.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/countries\/:code?embed=currency",
+                            "variable": [
+                                {
+                                    "id": "code",
+                                    "key": "code",
+                                    "value": "DE",
+                                    "description": "The country's ISO 3166-1 code."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "List admin. divisions (1)",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/countries\/:countryCode\/subAdmins1",
+                            "query": [
+                                {
+                                    "key": "embed",
+                                    "value": "null",
+                                    "description": "Comma-separated list of the administrative division (1) relationships for Eager Loading - Possible values: country.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "sort",
+                                    "value": "-name",
+                                    "description": "The sorting parameter (Order by DESC with the given column. Use \"-\" as prefix to order by ASC). Possible values: name.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "perPage",
+                                    "value": "2",
+                                    "description": "Items per page. Can be defined globally from the admin settings. Cannot be exceeded 100.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/countries\/:countryCode\/subAdmins1?embed=null&sort=-name&perPage=2",
+                            "variable": [
+                                {
+                                    "id": "countryCode",
+                                    "key": "countryCode",
+                                    "value": "US",
+                                    "description": "The country code of the country of the cities to retrieve."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "List admin. divisions (2)",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/countries\/:countryCode\/subAdmins2",
+                            "query": [
+                                {
+                                    "key": "embed",
+                                    "value": "null",
+                                    "description": "Comma-separated list of the administrative division (2) relationships for Eager Loading - Possible values: country,subAdmin1.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "sort",
+                                    "value": "-name",
+                                    "description": "The sorting parameter (Order by DESC with the given column. Use \"-\" as prefix to order by ASC). Possible values: name.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "perPage",
+                                    "value": "2",
+                                    "description": "Items per page. Can be defined globally from the admin settings. Cannot be exceeded 100.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/countries\/:countryCode\/subAdmins2?embed=null&sort=-name&perPage=2",
+                            "variable": [
+                                {
+                                    "id": "countryCode",
+                                    "key": "countryCode",
+                                    "value": "US",
+                                    "description": "The country code of the country of the cities to retrieve."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "List cities",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/countries\/:countryCode\/cities",
+                            "query": [
+                                {
+                                    "key": "embed",
+                                    "value": "null",
+                                    "description": "Comma-separated list of the city relationships for Eager Loading - Possible values: country,subAdmin1,subAdmin2.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "sort",
+                                    "value": "-name",
+                                    "description": "The sorting parameter (Order by DESC with the given column. Use \"-\" as prefix to order by ASC). Possible values: name.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "perPage",
+                                    "value": "2",
+                                    "description": "Items per page. Can be defined globally from the admin settings. Cannot be exceeded 100.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/countries\/:countryCode\/cities?embed=null&sort=-name&perPage=2",
+                            "variable": [
+                                {
+                                    "id": "countryCode",
+                                    "key": "countryCode",
+                                    "value": "US",
+                                    "description": "The country code of the country of the cities to retrieve."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get admin. division (1)",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/subAdmins1\/:code",
+                            "query": [
+                                {
+                                    "key": "embed",
+                                    "value": "null",
+                                    "description": "Comma-separated list of the administrative division (1) relationships for Eager Loading - Possible values: country.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/subAdmins1\/:code?embed=null",
+                            "variable": [
+                                {
+                                    "id": "code",
+                                    "key": "code",
+                                    "value": "CH.VD",
+                                    "description": "The administrative division (1)'s code."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get admin. division (2)",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/subAdmins2\/:code",
+                            "query": [
+                                {
+                                    "key": "embed",
+                                    "value": "null",
+                                    "description": "Comma-separated list of the administrative division (2) relationships for Eager Loading - Possible values: country,subAdmin1.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/subAdmins2\/:code?embed=null",
+                            "variable": [
+                                {
+                                    "id": "code",
+                                    "key": "code",
+                                    "value": "CH.VD.2225",
+                                    "description": "The administrative division (2)'s code."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get city",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/cities\/:id",
+                            "query": [
+                                {
+                                    "key": "embed",
+                                    "value": "country",
+                                    "description": "Comma-separated list of the city relationships for Eager Loading - Possible values: country,subAdmin1,subAdmin2.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/cities\/:id?embed=country",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "12544",
+                                    "description": "The city ID."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Home",
+            "description": "",
+            "item": [
+                {
+                    "name": "List sections",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/homeSections",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/homeSections"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Packages",
+            "description": "",
+            "item": [
+                {
+                    "name": "List packages",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/packages",
+                            "query": [
+                                {
+                                    "key": "embed",
+                                    "value": "null",
+                                    "description": "Comma-separated list of the package relationships for Eager Loading - Possible values: currency.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "sort",
+                                    "value": "-lft",
+                                    "description": "The sorting parameter (Order by DESC with the given column. Use \"-\" as prefix to order by ASC). Possible values: lft.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/packages?embed=null&sort=-lft"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get package",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/packages\/:id",
+                            "query": [
+                                {
+                                    "key": "embed",
+                                    "value": "currency",
+                                    "description": "Comma-separated list of the package relationships for Eager Loading - Possible values: currency.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/packages\/:id?embed=currency",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "2",
+                                    "description": "The package's ID."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Pages",
+            "description": "",
+            "item": [
+                {
+                    "name": "List pages",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/pages",
+                            "query": [
+                                {
+                                    "key": "excludedFromFooter",
+                                    "value": "",
+                                    "description": "Select or unselect pages that can list in footer.",
+                                    "disabled": true
+                                },
+                                {
+                                    "key": "sort",
+                                    "value": "-lft",
+                                    "description": "The sorting parameter (Order by DESC with the given column. Use \"-\" as prefix to order by ASC). Possible values: lft, created_at.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "perPage",
+                                    "value": "2",
+                                    "description": "Items per page. Can be defined globally from the admin settings. Cannot be exceeded 100.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/pages?excludedFromFooter=&sort=-lft&perPage=2"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get page",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/pages\/:slugOrId",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/pages\/:slugOrId",
+                            "variable": [
+                                {
+                                    "id": "slugOrId",
+                                    "key": "slugOrId",
+                                    "value": "terms",
+                                    "description": "The slug or ID of the page."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Payment Methods",
+            "description": "",
+            "item": [
+                {
+                    "name": "List payment methods",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/paymentMethods",
+                            "query": [
+                                {
+                                    "key": "countryCode",
+                                    "value": "US",
+                                    "description": "Country code. Select only the payment methods related to a country.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "sort",
+                                    "value": "-lft",
+                                    "description": "The sorting parameter (Order by DESC with the given column. Use \"-\" as prefix to order by ASC). Possible values: lft.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/paymentMethods?countryCode=US&sort=-lft"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get payment method",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/paymentMethods\/:id",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/paymentMethods\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "Can be the ID (int) or name (string) of the payment method."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Payments",
+            "description": "",
+            "item": [
+                {
+                    "name": "List payments",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/payments",
+                            "query": [
+                                {
+                                    "key": "embed",
+                                    "value": "null",
+                                    "description": "Comma-separated list of the payment relationships for Eager Loading - Possible values: post,paymentMethod,package,currency.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "sort",
+                                    "value": "created_at",
+                                    "description": "The sorting parameter (Order by DESC with the given column. Use \"-\" as prefix to order by ASC). Possible values: created_at.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "perPage",
+                                    "value": "2",
+                                    "description": "Items per page. Can be defined globally from the admin settings. Cannot be exceeded 100.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/payments?embed=null&sort=created_at&perPage=2"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get payment",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/payments\/:id",
+                            "query": [
+                                {
+                                    "key": "embed",
+                                    "value": "null",
+                                    "description": "Comma-separated list of the payment relationships for Eager Loading - Possible values: post,paymentMethod,package,currency.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/payments\/:id?embed=null",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "2",
+                                    "description": "The payment's ID."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Store payment",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/payments",
+                            "query": [
+                                {
+                                    "key": "package",
+                                    "value": "15",
+                                    "description": "Selected package ID.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/payments?package=15"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"country_code\": \"US\",\n    \"post_id\": 2,\n    \"package_id\": 8,\n    \"payment_method_id\": 5\n}"
+                        },
+                        "description": "Note: This endpoint is only available for the multi steps post edition."
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Posts",
+            "description": "",
+            "item": [
+                {
+                    "name": "List posts",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/posts",
+                            "query": [
+                                {
+                                    "key": "embed",
+                                    "value": "null",
+                                    "description": "Comma-separated list of the post relationships for Eager Loading - Possible values: user,category,postType,city,latestPayment,savedByLoggedUser,pictures.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "sort",
+                                    "value": "created_at",
+                                    "description": "The sorting parameter (Order by DESC with the given column. Use \"-\" as prefix to order by ASC). Possible values: created_at.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "perPage",
+                                    "value": "2",
+                                    "description": "Items per page. Can be defined globally from the admin settings. Cannot be exceeded 100.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/posts?embed=null&sort=created_at&perPage=2"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get post",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/posts\/:id",
+                            "query": [
+                                {
+                                    "key": "unactivated",
+                                    "value": "1",
+                                    "description": "Include or not unactivated entries.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "noCache",
+                                    "value": "",
+                                    "description": "Disable the cache for this request.",
+                                    "disabled": true
+                                },
+                                {
+                                    "key": "embed",
+                                    "value": "user%2CpostType",
+                                    "description": "Comma-separated list of the post relationships for Eager Loading - Possible values: user,category,postType,city,latestPayment,savedByLoggedUser.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "detailed",
+                                    "value": "",
+                                    "description": "Allow to get the post's details with all its relationships (No need to set the 'embed' parameter).",
+                                    "disabled": true
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/posts\/:id?unactivated=1&noCache=&embed=user%2CpostType&detailed=",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "2",
+                                    "description": "The post's ID."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Store post",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/posts",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/posts"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": false
+                        },
+                        "description": "For both types of post's creation (Single step or Multi steps).\nNote: The field 'admin_code' is only available when the post's country's 'admin_type' column is set to 1 or 2 and the 'admin_field_active' column is set to 1."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update post",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/posts\/:id",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/posts\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "perferendis",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": false
+                        },
+                        "description": "Note: The fields 'pictures', 'package_id' and 'payment_method_id' are only available with the single step post edition.\nThe field 'admin_code' is only available when the post's country's 'admin_type' column is set to 1 or 2 and the 'admin_field_active' column is set to 1."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Delete post(s)",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/posts\/:ids",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/posts\/:ids",
+                            "variable": [
+                                {
+                                    "id": "ids",
+                                    "key": "ids",
+                                    "value": "porro",
+                                    "description": "The ID or comma-separated IDs list of post(s)."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Email: Re-send link",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/posts\/:id\/verify\/resend\/email",
+                            "query": [
+                                {
+                                    "key": "entitySlug",
+                                    "value": "users",
+                                    "description": "The slug of the entity to verify ('users' or 'posts').",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/posts\/:id\/verify\/resend\/email?entitySlug=users",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "sapiente",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Re-send email verification link to the user",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "SMS: Re-send code",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/posts\/:id\/verify\/resend\/sms",
+                            "query": [
+                                {
+                                    "key": "entitySlug",
+                                    "value": "users",
+                                    "description": "The slug of the entity to verify ('users' or 'posts').",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/posts\/:id\/verify\/resend\/sms?entitySlug=users",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "occaecati",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Re-send mobile phone verification token by SMS",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Verification",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/posts\/verify\/:field\/:token",
+                            "query": [
+                                {
+                                    "key": "entitySlug",
+                                    "value": "users",
+                                    "description": "The slug of the entity to verify ('users' or 'posts').",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/posts\/verify\/:field\/:token?entitySlug=users",
+                            "variable": [
+                                {
+                                    "id": "field",
+                                    "key": "field",
+                                    "value": "explicabo",
+                                    "description": ""
+                                },
+                                {
+                                    "id": "token",
+                                    "key": "token",
+                                    "value": "vero",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Verify the user's email address or mobile phone number",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Resumes",
+            "description": "",
+            "item": [
+                {
+                    "name": "List resumes",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/resumes",
+                            "query": [
+                                {
+                                    "key": "sort",
+                                    "value": "created_at",
+                                    "description": "The sorting parameter (Order by DESC with the given column. Use \"-\" as prefix to order by ASC). Possible values: created_at, name.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "perPage",
+                                    "value": "2",
+                                    "description": "Items per page. Can be defined globally from the admin settings. Cannot be exceeded 100.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/resumes?sort=created_at&perPage=2"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get resume",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/resumes\/:id",
+                            "query": [
+                                {
+                                    "key": "embed",
+                                    "value": "user",
+                                    "description": "The Comma-separated list of the company relationships for Eager Loading - Possible values: user.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/resumes\/:id?embed=user",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "269",
+                                    "description": "The resume's ID."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Store resume",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/resumes",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/resumes"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update resume",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/resumes\/:id",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/resumes\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "dolores",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Delete resume(s)",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/resumes\/:ids",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/resumes\/:ids",
+                            "variable": [
+                                {
+                                    "id": "ids",
+                                    "key": "ids",
+                                    "value": "ipsa",
+                                    "description": "The ID or comma-separated IDs list of resume(s)."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Saved Posts",
+            "description": "",
+            "item": [
+                {
+                    "name": "Store\/Delete saved post",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/savedPosts",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/savedPosts"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"post_id\": 2\n}"
+                        },
+                        "description": "Save a post in favorite, or remove it from favorite."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "List saved posts",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/savedPosts",
+                            "query": [
+                                {
+                                    "key": "country_code",
+                                    "value": "US",
+                                    "description": "The code of the user's country.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "sort",
+                                    "value": "created_at",
+                                    "description": "The sorting parameter (Order by DESC with the given column. Use \"-\" as prefix to order by ASC). Possible values: created_at.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "perPage",
+                                    "value": "2",
+                                    "description": "Items per page. Can be defined globally from the admin settings. Cannot be exceeded 100.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/savedPosts?country_code=US&sort=created_at&perPage=2"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Delete saved post(s)",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/savedPosts\/:ids",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/savedPosts\/:ids",
+                            "variable": [
+                                {
+                                    "id": "ids",
+                                    "key": "ids",
+                                    "value": "iste",
+                                    "description": "The ID or comma-separated IDs list of saved post(s)."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Saved Searches",
+            "description": "",
+            "item": [
+                {
+                    "name": "Store\/Delete saved search",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/savedSearches",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/savedSearches"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"url\": \"https:\\\/\\\/demo.laraclassifier.com\\\/search\\\/?q=test&l=\",\n    \"count_posts\": 29\n}"
+                        },
+                        "description": "Save a search result in favorite, or remove it from favorite."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "List saved searches",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/savedSearches",
+                            "query": [
+                                {
+                                    "key": "sort",
+                                    "value": "created_at",
+                                    "description": "The sorting parameter (Order by DESC with the given column. Use \"-\" as prefix to order by ASC). Possible values: created_at.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "perPage",
+                                    "value": "2",
+                                    "description": "Items per page. Can be defined globally from the admin settings. Cannot be exceeded 100.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/savedSearches?sort=created_at&perPage=2"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Delete saved search(es)",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/savedSearches\/:ids",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/savedSearches\/:ids",
+                            "variable": [
+                                {
+                                    "id": "ids",
+                                    "key": "ids",
+                                    "value": "dolorem",
+                                    "description": "The ID or comma-separated IDs list of saved search(es)."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Settings",
+            "description": "",
+            "item": [
+                {
+                    "name": "List settings",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/settings",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/settings"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get setting",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/settings\/:key",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/settings\/:key",
+                            "variable": [
+                                {
+                                    "id": "key",
+                                    "key": "key",
+                                    "value": "app",
+                                    "description": "The settings key."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Social Auth",
+            "description": "",
+            "item": [
+                {
+                    "name": "Get target URL",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/auth\/:provider",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/auth\/:provider",
+                            "variable": [
+                                {
+                                    "id": "provider",
+                                    "key": "provider",
+                                    "value": "corporis",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get user info",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/auth\/:provider\/callback",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/auth\/:provider\/callback",
+                            "variable": [
+                                {
+                                    "id": "provider",
+                                    "key": "provider",
+                                    "value": "porro",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Threads",
+            "description": "",
+            "item": [
+                {
+                    "name": "Store thread",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/threads",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/threads"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "multipart\/form-data"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "from_name",
+                                    "value": "John Doe",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "from_email",
+                                    "value": "john.doe@domain.tld",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "from_phone",
+                                    "value": "nulla",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "body",
+                                    "value": "Modi temporibus voluptas expedita voluptatibus voluptas veniam.",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "post_id",
+                                    "value": 2,
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "resume[filename]",
+                                    "value": "cum",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "captcha_key",
+                                    "value": "enim",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "filename",
+                                    "src": [],
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        "description": "Start a conversation. Creation of a new thread.",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "List threads",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/threads",
+                            "query": [
+                                {
+                                    "key": "filter",
+                                    "value": "unread",
+                                    "description": "Filter for the list - Possible value: unread, started or important.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "embed",
+                                    "value": "null",
+                                    "description": "Comma-separated list of the post relationships for Eager Loading - Possible values: post.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "perPage",
+                                    "value": "2",
+                                    "description": "Items per page. Can be defined globally from the admin settings. Cannot be exceeded 100.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/threads?filter=unread&embed=null&perPage=2"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Get all logged user's threads\nFilters:\n- unread: Get the logged user's unread threads\n- started: Get the logged user's started threads\n- important: Get the logged user's make as important threads"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get thread",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/threads\/:id",
+                            "query": [
+                                {
+                                    "key": "embed",
+                                    "value": "null",
+                                    "description": "Comma-separated list of the post relationships for Eager Loading - Possible values: user,post,messages,participants.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/threads\/:id?embed=null",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "2",
+                                    "description": "The thread ID."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Get a thread (owned by the logged user) details"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update thread",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/threads\/:id",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/threads\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "aspernatur",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "multipart\/form-data"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "body",
+                                    "value": "Modi temporibus voluptas expedita voluptatibus voluptas veniam.",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "filename",
+                                    "src": [],
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Delete thread(s)",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/threads\/:ids",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/threads\/:ids",
+                            "variable": [
+                                {
+                                    "id": "ids",
+                                    "key": "ids",
+                                    "value": "ex",
+                                    "description": "The ID or comma-separated IDs list of thread(s)."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Bulk updates",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/threads\/bulkUpdate\/:ids",
+                            "query": [
+                                {
+                                    "key": "type",
+                                    "value": "non",
+                                    "description": "The type of action to execute (markAsRead, markAsUnread, markAsImportant, markAsNotImportant or markAllAsRead).",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/threads\/bulkUpdate\/:ids?type=non",
+                            "variable": [
+                                {
+                                    "id": "ids",
+                                    "key": "ids",
+                                    "value": "in",
+                                    "description": "The ID or comma-separated IDs list of thread(s)."
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "List messages",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/threads\/:threadId\/messages",
+                            "query": [
+                                {
+                                    "key": "embed",
+                                    "value": "null",
+                                    "description": "Comma-separated list of the post relationships for Eager Loading - Possible values: user.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "sort",
+                                    "value": "created_at",
+                                    "description": "The sorting parameter (Order by DESC with the given column. Use \"-\" as prefix to order by ASC). Possible values: created_at.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "perPage",
+                                    "value": "2",
+                                    "description": "Items per page. Can be defined globally from the admin settings. Cannot be exceeded 100.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/threads\/:threadId\/messages?embed=null&sort=created_at&perPage=2",
+                            "variable": [
+                                {
+                                    "id": "threadId",
+                                    "key": "threadId",
+                                    "value": "293",
+                                    "description": "The thread's ID."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Get all thread's messages"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get message",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/threads\/:threadId\/messages\/:id",
+                            "query": [
+                                {
+                                    "key": "embed",
+                                    "value": "null",
+                                    "description": "Comma-separated list of the post relationships for Eager Loading - Possible values: thread,user.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/threads\/:threadId\/messages\/:id?embed=null",
+                            "variable": [
+                                {
+                                    "id": "threadId",
+                                    "key": "threadId",
+                                    "value": "293",
+                                    "description": "The thread's ID."
+                                },
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "3545",
+                                    "description": "The thread's message's ID."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Get a thread's message (owned by the logged user) details"
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Users",
+            "description": "",
+            "item": [
+                {
+                    "name": "List users",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/users",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/users"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get user",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/users\/:id",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/users\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "3",
+                                    "description": "The user's ID."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Store user",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/users",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/users"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "multipart\/form-data"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "country_code",
+                                    "value": "US",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "language_code",
+                                    "value": "en",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "user_type_id",
+                                    "value": 1,
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "gender_id",
+                                    "value": 1,
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "name",
+                                    "value": "John Doe",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "phone",
+                                    "value": "+17656766467",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "phone_hidden",
+                                    "value": false,
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "email",
+                                    "value": "john.doe@domain.tld",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "username",
+                                    "value": "john_doe",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "js!X07$z61hLA",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "password_confirmation",
+                                    "value": "js!X07$z61hLA",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "disable_comments",
+                                    "value": true,
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "ip_addr",
+                                    "value": "dolor",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "accept_terms",
+                                    "value": true,
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "accept_marketing_offers",
+                                    "value": false,
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "time_zone",
+                                    "value": "America\/New_York",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "captcha_key",
+                                    "value": "praesentium",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "photo",
+                                    "src": [],
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update user",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/users\/:id",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/users\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "sequi",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "multipart\/form-data"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "country_code",
+                                    "value": "US",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "language_code",
+                                    "value": "en",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "user_type_id",
+                                    "value": 1,
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "gender_id",
+                                    "value": 1,
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "name",
+                                    "value": "John Doe",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "phone",
+                                    "value": "+17656766467",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "phone_hidden",
+                                    "value": false,
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "email",
+                                    "value": "john.doe@domain.tld",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "username",
+                                    "value": "john_doe",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "js!X07$z61hLA",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "password_confirmation",
+                                    "value": "js!X07$z61hLA",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "disable_comments",
+                                    "value": true,
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "ip_addr",
+                                    "value": "unde",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "accept_terms",
+                                    "value": true,
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "accept_marketing_offers",
+                                    "value": false,
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "time_zone",
+                                    "value": "America\/New_York",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "photo",
+                                    "src": [],
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Delete user",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/users\/:id",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/users\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "cum",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Email: Re-send link",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/users\/:id\/verify\/resend\/email",
+                            "query": [
+                                {
+                                    "key": "entitySlug",
+                                    "value": "users",
+                                    "description": "The slug of the entity to verify ('users' or 'posts').",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/users\/:id\/verify\/resend\/email?entitySlug=users",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "tempore",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Re-send email verification link to the user",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "SMS: Re-send code",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/users\/:id\/verify\/resend\/sms",
+                            "query": [
+                                {
+                                    "key": "entitySlug",
+                                    "value": "users",
+                                    "description": "The slug of the entity to verify ('users' or 'posts').",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/users\/:id\/verify\/resend\/sms?entitySlug=users",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "temporibus",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Re-send mobile phone verification token by SMS",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Verification",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/users\/verify\/:field\/:token",
+                            "query": [
+                                {
+                                    "key": "entitySlug",
+                                    "value": "users",
+                                    "description": "The slug of the entity to verify ('users' or 'posts').",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/users\/verify\/:field\/:token?entitySlug=users",
+                            "variable": [
+                                {
+                                    "id": "field",
+                                    "key": "field",
+                                    "value": "aut",
+                                    "description": ""
+                                },
+                                {
+                                    "id": "token",
+                                    "key": "token",
+                                    "value": "omnis",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Content-Language",
+                                "value": "en"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "a25ydDlKdDRwT2wzYjAxV1hvc0hSUmQxYklTTE1pRHU="
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Verify the user's email address or mobile phone number",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "bearer"
+    }
+}

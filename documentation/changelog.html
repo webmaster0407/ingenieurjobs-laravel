@@ -1,0 +1,1639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	
+	<title>JobClass - Changelog</title>
+	
+	<!-- Styles -->
+	<link href="assets/css/theDocs.all.min.css" rel="stylesheet">
+	<link href="assets/css/custom.css" rel="stylesheet">
+	<link href="assets/css/skin-purple.css" rel="stylesheet">
+	
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:100,300,400,500%7CLato:300,400' rel='stylesheet' type='text/css'>
+	
+	<!-- Favicons -->
+	<link rel="icon" href="assets/img/favicon.png">
+</head>
+
+<body>
+
+<header class="site-header">
+	
+	<!-- Top navbar & branding -->
+	<nav class="navbar navbar-default">
+		<div class="container">
+			
+			<!-- Toggle buttons and brand -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+					<span class="glyphicon glyphicon-option-vertical"></span>
+				</button>
+				
+				<button type="button" class="navbar-toggle for-sidebar" data-toggle="offcanvas">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<a class="navbar-brand" href="http://support.bedigit.com/help-center" style="padding: 0;">
+					<img src="assets/img/logo.png" alt="Logo JobClass">
+				</a>
+			</div>
+			<!-- END Toggle buttons and brand -->
+			
+			<!-- Top navbar -->
+			<div id="navbar" class="navbar-collapse collapse" aria-expanded="true" role="banner">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="index.html">Documentation</a></li>
+					<li><a href="http://support.bedigit.com/help-center">Help Center</a></li>
+					<li class="hero"><a href="https://1.envato.market/Ld3mZ">Purchase</a></li>
+				</ul>
+			</div>
+			<!-- END Top navbar -->
+		
+		</div>
+	</nav>
+	<!-- END Top navbar & branding -->
+
+</header>
+
+
+<main class="container">
+	<div class="row">
+		
+		<!-- Main content -->
+		<article class="col-md-12 col-sm-12 main-content" role="main">
+			
+			<header>
+				<h1>Changelog</h1>
+				<p>In this page, you can find a record of all the changes made to JobClass such as bug fixes, new features, etc.</p>
+			</header>
+
+			<section>
+				<h3 id="v9.2.6">Version 9.2.6
+					<small class="release-date">Mar 12, 2022</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-fixed">Dynamic style options fixed.</li>
+					<li class="ch-fixed">Posts views counter fixed.</li>
+					<li class="ch-fixed">Minor bugs fixed.</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3 id="v9.2.5">Version 9.2.5
+					<small class="release-date">Feb 28, 2022</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">API: Posts list/search endpoint improved.</li>
+					<li class="ch-updated">API: Creation endpoint for saved posts and for saved searches added.</li>
+					<li class="ch-updated">API: When the thread details endpoint called, option to embed user, post and thread message details added.</li>
+					<li class="ch-updated">API: Remove hidden columns (<code>password</code>, <code>remember_token</code>) from user details.</li>
+					<li class="ch-updated">API: Remove the <code>purchase_code</code> extra column from app setting details.</li>
+					<li class="ch-updated">API documentation updated.</li>
+					<li class="ch-updated">Use the "Search (Default)" meta tag pattern when 2 filters (e.g. category & location) are filled.</li>
+					<li class="ch-updated">Cron Job command: Send notification in the listings country's main language.</li>
+					<li class="ch-updated">Category selection in the job post creation/editing form optimized.</li>
+					<li class="ch-fixed">IP addresses validator methods in the IP helper class fixed.</li>
+					<li class="ch-fixed">Minor bugs fixed.</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3 id="v9.2.4">Version 9.2.4
+					<small class="release-date">Feb 12, 2022</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-fixed">Minor bugs fixed.</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3 id="v9.2.3">Version 9.2.3
+					<small class="release-date">Feb 9, 2022</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">During payment process, save the package currency in the DB (like the amount)
+						<br>to show the right information about the payment even when admin user change the package price or currency.</li>
+					<li class="ch-updated">Admin panel: Show the right error message when the backup fails.</li>
+					<li class="ch-fixed">Bugfix: Fix the <code>LC_MESSAGES</code> error, when PHP wasn't compiled with <code>libintl</code>.</li>
+					<li class="ch-fixed">Bugfix: Save the payment amount in the DB when PayPal is used as payment method.</li>
+					<li class="ch-updated">Minor improvements & Code cleaning.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3 id="v9.2.2">Version 9.2.2
+					<small class="release-date">Feb 2, 2022</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">The script can now auto-fix broken plugins' root folder name, when they are incorrectly added to the system.</li>
+					<li class="ch-updated">Geolocation feature improved.</li>
+					<li class="ch-added">9 new GeoIP driver added.</li>
+					<li class="ch-updated">Usage of the official ISO country code for the United Kingdom (<code>GB</code> instead of <code>UK</code> that is reserved).</li>
+					<li class="ch-updated">Exceptions Handler improved.</li>
+					<li class="ch-fixed">Bugfix: Fix for float number with incorrect decimal separator (after setting a locale).</li>
+					<li class="ch-fixed">Bugfix: Remove filters in search results page when the "Enable The Multi-countries URLs Optimization" option is enabled.</li>
+					<li class="ch-fixed">Bugfix: WYSIWYG editor usage in the Admin Panel.</li>
+					<li class="ch-added">Geonames database updated (Available only for fresh installations).</li>
+					<li class="ch-added">Show a spinner (loading icon) during countries (un)installation.</li>
+					<li class="ch-fixed">Other minor bugs fixed.</li>
+					<li class="ch-updated">Minor improvements & Code cleaning.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3 id="v9.2.1">Version 9.2.1
+					<small class="release-date">Jan 15, 2022</small>
+				</h3>
+				<div class="callout callout-danger" role="alert">
+					<h4><strong>WARNING</strong></h4>
+					<ul>
+						<li>The website and the plugins files need to be upgrade in the same time.</li>
+					</ul>
+				</div>
+				<ul class="changelog">
+					<li class="ch-added">In addition to the logo upload resizing options,
+						<br>new options for logo displaying has been added (Admin → Settings → General → Style → Logo).</li>
+					<li class="ch-fixed">Bugfix: The "Remember me" feature during users authentication fixed.</li>
+					<li class="ch-fixed">Bugfix: Error during files uploading when users send a message (from the website's Messenger).</li>
+					<li class="ch-fixed">Bugfix: Send the right HTTP status in the API response when a candidate contact an Employer.</li>
+					<li class="ch-fixed">Other Bugs fixed.</li>
+					<li class="ch-updated">Minor improvements & Code cleaning.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3 id="v9.2.0">Version 9.2.0
+					<small class="release-date">Jan 6, 2022</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Admin panel: Logo's dimensions settings added.</li>
+					<li class="ch-updated">Admin panel library updated.</li>
+					<li class="ch-updated">Code improved.</li>
+					<li class="ch-fixed">Bugs fixed.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3 id="v9.1.5">Version 9.1.5
+					<small class="release-date">Dec 31, 2021</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Languages menu improved.</li>
+					<li class="ch-fixed">Bugfix: Languages files lines synchronization.</li>
+					<li class="ch-fixed">Using cookie instead of session to store the users preferred language.</li>
+					<li class="ch-updated">Minor improvements & Code cleaning.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3 id="v9.1.4">Version 9.1.4
+					<small class="release-date">Dec 13, 2021</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Apply compatibility with new payment plugins (sold in addition).</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v9.1.3">Version 9.1.3
+					<small class="release-date">Dec 9, 2021</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">8 new predefined skins added.</li>
+					<li class="ch-added">Option to create unlimited skins added (New skin can be created simply by choosing its primary color).</li>
+					<li class="ch-added">Admin panel: Bulk entries activation/deactivation and listings approval/disapproval (reviewed) added.</li>
+					<li class="ch-updated">No-Index options in the Admin panel has been improved for more SEO customization.</li>
+					<li class="ch-updated">Many non-used assets (JS/CSS) files removed.</li>
+					<li class="ch-fixed">Bugfix: Validation messages translation in other languages.</li>
+					<li class="ch-fixed">Bugfix: Backup deletion error message fixed.</li>
+					<li class="ch-fixed">Minor bugs fixed.</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v9.1.2">Version 9.1.2
+					<small class="release-date">Nov 20, 2021</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Hash/Hide the Jobs' IDs in URL as YouTube-like IDs option added.</li>
+					<li class="ch-added"><a href="https://sweetalert2.github.io/" target="_blank">SweetAlert2</a> integration + Improvements of JS alert().</li>
+					<li class="ch-updated">Salary (min & max) range filter in the search results page improved.</li>
+					<li class="ch-updated">Header menu improved.</li>
+					<li class="ch-fixed">Bugs fixed.</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v9.1.1">Version 9.1.1
+					<small class="release-date">Nov 5, 2021</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-fixed">Bugs fixed: Disk selection for resumes files.</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v9.1.0">Version 9.1.0
+					<small class="release-date">Nov 2, 2021</small>
+				</h3>
+				<div class="callout callout-danger" role="alert">
+					<h4><strong>WARNING</strong></h4>
+					<ul>
+						<li>Breaking change in languages files (Many keys changed).</li>
+					</ul>
+				</div>
+				<ul class="changelog">
+					<li class="ch-added">Admin panel: Visual icons selection for categories added.</li>
+					<li class="ch-added">Display big icons font as picture for the homepage categories section.</li>
+					<li class="ch-updated">Homepage mini stats section improved.</li>
+					<li class="ch-added">Front: Bootstrap 5 Icons Font implemented.</li>
+					<li class="ch-updated">Languages files lines keys updated.</li>
+					<li class="ch-fixed">Minor bugs fixed.</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v9.0.3">Version 9.0.3
+					<small class="release-date">Oct 9, 2021</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Admin panel: Allow/Disallow authentication required to report abuses.</li>
+					<li class="ch-added">Allow only logged users to see candidates resumes files. Prevents search engines indexing.</li>
+					<li class="ch-updated">Front: Usage of the latest version the FontAwesome 5 (free version).</li>
+					<li class="ch-fixed">Bugfix: Close the Bootstrap Tooltips on mouseout.</li>
+					<li class="ch-fixed">Bugfix: Location field in the homepage search form. Fixes abnormal 404 error issues.</li>
+					<li class="ch-fixed">Minor bugs fixed.</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v9.0.2">Version 9.0.2
+					<small class="release-date">Sept 22, 2021</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">User profile photo added (replacing Gravatar), displayed in the chat.</li>
+					<li class="ch-fixed">Bugs fixed.</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v9.0.1">Version 9.0.1
+					<small class="release-date">Sept 13, 2021</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Option to validate Mail & SMS driver's parameters added.</li>
+					<li class="ch-added">Website logo added in the mail template.</li>
+					<li class="ch-updated">PayPal payment plugin improved. Check out the <a href="index.html#paypal">new configuration</a>.</li>
+					<li class="ch-updated">Stripe payment plugin improved.</li>
+					<li class="ch-fixed">Bugs fixed.</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v9.0.0">Version 9.0.0
+					<small class="release-date">Aug 25, 2021</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Frontend & Admin panel: Bootstrap 5.x support added.</li>
+					<li class="ch-added">Possibility to customize Meta Tags for search results (Categories, Cities, Tags, etc.) pages.</li>
+					<li class="ch-added">A rich text section added in the homepage sections.</li>
+					<li class="ch-added">A rich text section (containing the categories description) added in the categories page.</li>
+					<li class="ch-added">Possibility to set the homepage's sponsored and latest ads sections in carousel or as list.</li>
+					<li class="ch-added">Possibility to set the details page's similar ads section in carousel or as list.</li>
+					<li class="ch-added">Settings to limit ads title & description length added.</li>
+					<li class="ch-added">Settings to set tags limit & each tag length limit added.</li>
+					<li class="ch-added">Validator rule to check the uniqueness of the ads for logged users added.</li>
+					<li class="ch-added">Hide WYSIWYG link option related to the admin configuration.</li>
+					<li class="ch-updated">Improvement of Mail, SMS and Security settings to save unselected drivers/providers data.</li>
+					<li class="ch-updated">Multi words tags allowed.</li>
+					<li class="ch-updated">Usage of the official PayU SDK for the <a href="https://laraclassifier.com/add-ons/payu-payment/" target="_blank">PayU add-on</a>.</li>
+					<li class="ch-updated">Postmark & Mailgun config updated to meet their official requirements.</li>
+					<li class="ch-added">Google reCAPTCHA re-added in addition to the Simple Captcha.</li>
+					<li class="ch-fixed">Bugfix: Social Login for the <a href="https://laraclassifier.com/add-ons/multisite-domain-mapping/" target="_blank">MultiDomain add-on</a>.</li>
+					<li class="ch-fixed">Bugfix: Previous URL stored in session.</li>
+					<li class="ch-fixed">Bugfix: Simple Captcha text top position fixed for imagick.</li>
+					<li class="ch-fixed">Usage of <code>Throwable</code> instead of <code>Exception</code> class to show the right error messages.</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-fixed">Minor bugs fixed.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v8.0.1">Version 8.0.1
+					<small class="release-date">July 1, 2021</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-fixed">Minor bugs fixed.</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v8.0.0">Version 8.0.0
+					<small class="release-date">Jun 26, 2021</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">REST API added.</li>
+					<li class="ch-added">API consumed at 50% by the web app's front-end.</li>
+					<li class="ch-added">The REST API documentation added.</li>
+					<li class="ch-added">New captcha system implemented (to avoid the code breaks related to the updates of reCAPTCHA API).</li>
+					<li class="ch-updated">Full improvement of the multi steps posts creation (Save data in the DB at the last step).</li>
+					<li class="ch-updated">Search engine's code improved.</li>
+					<li class="ch-updated">Prevent Adblockers (latest update) to hide posts list.</li>
+					<li class="ch-updated">Allow to customize the admin URI from the <code>/.env</code> file with the variable <code>ADMIN_ROUTE=newuri</code>.</li>
+					<li class="ch-updated">Bootstrap Fileinput updated.</li>
+					<li class="ch-updated">Many minor improvements.</li>
+					<li class="ch-fixed">Bugfix: Backup settings fixed + Improvements.</li>
+					<li class="ch-fixed">Bugfix: AdsClear command</li>
+					<li class="ch-fixed">Minor bugs fixed.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v7.0.6">Version 7.0.6
+					<small class="release-date">Mar 20, 2021</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Search page left sidebar: Clear filter buttons added.</li>
+					<li class="ch-updated">Admin panel: Sidebar menu improved.</li>
+					<li class="ch-updated">Show archived ads as archived instead of 404 error page for ads owners & admin users.</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-fixed">Minor bugs fixed.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v7.0.5">Version 7.0.5
+					<small class="release-date">Mar 8, 2021</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Admin panel: PHP-cli version info added in System Info.</li>
+					<li class="ch-updated">Cron Job Settings Info (and System Info) improved.</li>
+					<li class="ch-updated">Increasing the pages content limitation (from 65000 to 16000000 characters).</li>
+					<li class="ch-fixed">Fix the MySQL error when the database translatable entries fallback locale is set to null.</li>
+					<li class="ch-fixed">Properly retrieve salary (min & max) in forms during ads edition.</li>
+					<li class="ch-fixed">Fix 404 error for customized ads URL (when those are the callback URL) from payment gateways.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v7.0.4">Version 7.0.4
+					<small class="release-date">Mar 6, 2021</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Admin panel: Option to specify unexisting location search results in front.</li>
+					<li class="ch-fixed">Bugfix: Cities suggestions (or search) fields (MySQL error - Illegal mix of collations).</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-fixed">Minor bugs fixed.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v7.0.3">Version 7.0.3
+					<small class="release-date">Mar 4, 2021</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Admin panel: System Info page added.</li>
+					<li class="ch-updated">Properly handle AJAX errors related to the city fields in forms.</li>
+					<li class="ch-fixed">Properly apply the country's filter in city search.</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-fixed">Minor bugs fixed.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v7.0.2">Version 7.0.2
+					<small class="release-date">Feb 26, 2021</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Support for MariaDB added.</li>
+					<li class="ch-updated">Option to allow emojis in ads' title and description (When utf8mb4 is set as charset and utf8mb4_unicode_ci as collation).</li>
+					<li class="ch-updated">Even if not recommended, support for MyISAM storage engine added (New installations only).</li>
+					<li class="ch-updated">Date format improved.</li>
+					<li class="ch-fixed">Bugs fixed.</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v7.0.1">Version 7.0.1
+					<small class="release-date">Feb 22, 2021</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Usage of <code>utf8mb4</code> for DB Charset & <code>utf8mb4_unicode_ci</code> for DB Collation by default (New installations only).</li>
+					<li class="ch-fixed">Bugfix: City field - Illegal mix of collations (utf8_general_ci,COERCIBLE) and (utf8_unicode_ci,COERCIBLE) for operation 'like'.</li>
+					<li class="ch-fixed">Minor bugs fixed.</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v7.0.0">Version 7.0.0
+					<small class="release-date">Feb 16, 2021</small>
+				</h3>
+				<div class="callout callout-danger" role="alert">
+					<h4><strong>INFORMATION</strong></h4>
+					<ul>
+						<li>From the v7.0.0 of the script, MySQL 5.7 or higher is recommended.</li>
+						<li>MySQL 5.6 (deprecated) will work for this version, but its support will be removed in the future.</li>
+					</ul>
+				</div>
+				<ul class="changelog">
+					<li class="ch-added">Database's translations strongly improved.</li>
+					<li class="ch-added">Countries, Cities and Administrative Divisions names can be translated now.</li>
+					<li class="ch-updated">Changing the system's default language is more easy, fast and more secured.</li>
+					<li class="ch-added">Option to enable/disable CSRF protection added.</li>
+					<li class="ch-updated">Search filter links improved.</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v6.1.8">Version 6.1.8
+					<small class="release-date">Jan 28, 2021</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Search engine improved: Include category name and parent category name in keyword search (with low relevance).</li>
+					<li class="ch-fixed">Properly display logos upload errors.</li>
+					<li class="ch-fixed">Fixing invalid action name in reCAPTCHA v3.</li>
+					<li class="ch-fixed">Bugfix: Display PayPal gateway on the payment page.</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v6.1.7">Version 6.1.7
+					<small class="release-date">Jan 22, 2021</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Permalink settings for Ads details page re-added (for the new languages switcher version).</li>
+					<li class="ch-fixed">Countries data SQL improved to prevent primary keys duplication issue.</li>
+					<li class="ch-fixed">Apply persistent filters for categories and cities on search results page.</li>
+					<li class="ch-updated">Options to count ads related to categories or city moved from "Homepage" settings to "List & Search" settings.</li>
+					<li class="ch-fixed">Bugfix: Ads Clear command: Take to account payments with <code>transaction_id</code> = <code>null</code>.</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v6.1.6">Version 6.1.6
+					<small class="release-date">Jan 17, 2021</small>
+				</h3>
+				<div class="callout callout-danger" role="alert">
+					<h4><strong>INFORMATION</strong></h4>
+					<ul>
+						<li>By applying this update, all the messages between users will be lost. Note that these messages were also sent by email.</li>
+					</ul>
+				</div>
+				<ul class="changelog">
+					<li class="ch-added">Chat system added (Replacing the old Messaging system).</li>
+					<li class="ch-added">Date format management per language or per country added.</li>
+					<li class="ch-added">Dates can be hide on the listing page, on the homepage and on the ads details pages.</li>
+					<li class="ch-added">Support to edit the bootstrap-filenput language file from the Laravel localization management area.</li>
+					<li class="ch-updated">Time zones list and their selection improved.</li>
+					<li class="ch-fixed">Apply the right order to the categories on the search results page.</li>
+					<li class="ch-fixed">bxSlider rtl controls options fixed.</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v6.1.5">Version 6.1.5
+					<small class="release-date">Dec 21, 2020</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Support for iyzipay-php added (for the iyzico payment plugin).</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v6.1.4">Version 6.1.4
+					<small class="release-date">Dec 13, 2020</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-fixed">Bugfix: The AdjacentToNested function fixed.</li>
+					<li class="ch-fixed">Bugfix: Support for 2Checkout-php v0.4.0 (in the 2Checkout plugin).</li>
+					<li class="ch-updated">Montenegrin language's ISO code added that allow you to translate your website to it.</li>
+					<li class="ch-updated">Composer update.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v6.1.3">Version 6.1.3
+					<small class="release-date">Dec 9, 2020</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-fixed">Bugfix: Similar Ads (Near the ad location).</li>
+					<li class="ch-updated">PHP extension <code>json</code> checking before starting installation, added.</li>
+					<li class="ch-updated">
+						The app can now detect the primary language of the country (without making redirection or using session).
+						<br>NOTE:
+						<ul>
+							<li>You have to activate the "Auto Detect and Select Language" option in the "Admin panel → Setup → General Settings → Application".</li>
+							<li>If you use our <a
+									href="https://codecanyon.net/item/domain-mapping-plugin-for-laraclassified-and-jobclass/22079730" target="_blank">Domain Mapping</a> plugin, this will strongly optimize the language management for your SEO.</li>
+						</ul>
+					</li>
+					<li class="ch-updated">Minor improvements.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v6.1.2">Version 6.1.2
+					<small class="release-date">Dec 4, 2020</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-fixed">Bugfix: Show right category name on search results page.</li>
+					<li class="ch-fixed">Admin User Permissions fixed after upgrade.</li>
+					<li class="ch-fixed">
+						Bugfix: Location select box AJAX 404 error.
+						<br>Make <code>{countryCode}</code> case-insensitive in the 'routes/web.php'.
+					</li>
+					<li class="ch-updated">Composer update.</li>
+					<li class="ch-fixed">Minor bugs fixed.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v6.1.1">Version 6.1.1
+					<small class="release-date">Nov 28, 2020</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">
+						Disable the MySQL (5.7.6 or greater) <code>ST_Distance_Sphere</code> function when
+						<a href="https://stackoverflow.com/questions/44409012/function-st-distance-sphere-does-not-exist-in-mariadb" target="_blank">
+							MariaDB
+						</a> is used.
+					</li>
+					<li class="ch-fixed">Sitemap link in footer fixed.</li>
+					<li class="ch-fixed">Search results page: OrderBy <code>relevance</code> fixed.</li>
+					<li class="ch-fixed">Minor bugs fixed.</li>
+					<li class="ch-updated">Minor improvements.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v6.1.0">Version 6.1.0
+					<small class="release-date">Nov 23, 2020</small>
+				</h3>
+				<div class="callout callout-danger" role="alert">
+					<h4><strong>INFORMATION</strong></h4>
+					<ul>
+						<li>From the v6.1.0 the script requires PHP 7.3 or higher.</li>
+					</ul>
+				</div>
+				<ul class="changelog">
+					<li class="ch-added">Laravel 8.x support added.</li>
+					<li class="ch-added">Usage of Laravel Migrations instead of Raw SQL.</li>
+					<li class="ch-added">Usage of Eloquent (instead of Raw SQL) for ads search.
+						By significantly reducing the number of SQL queries performed during a search.</li>
+					<li class="ch-added">GDPR: Users can allow marketing usage of their email address from forms.</li>
+					<li class="ch-updated">Settings & Home sections codes improved.</li>
+					<li class="ch-updated"><strong>Important:</strong> Language code is removed from URLs. Session is used instead.</li>
+					<li class="ch-updated">Installation & Upgrade process improved.</li>
+					<li class="ch-fixed">SMS (Twilio) settings fixed & improved.</li>
+					<li class="ch-updated">Many more small improvements & bugfix.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v6.0.4">Version 6.0.4
+					<small class="release-date">Oct 2, 2020</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Advertising Slots Improved (Integration of auto placement advertising).</li>
+					<li class="ch-fixed">Bugfix: Install's SQL files upgraded.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v6.0.3">Version 6.0.3
+					<small class="release-date">Sep 14, 2020</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Small Improvements (related to Composer 2.0 & PSR4).</li>
+					<li class="ch-fixed">Admin panel's sidebar broken links fixed.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v6.0.2">Version 6.0.2
+					<small class="release-date">Sep 9, 2020</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-fixed">Bugfix: Translated Routes (Categories & Pages).</li>
+					<li class="ch-updated">Small Improvements.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v6.0.1">Version 6.0.1
+					<small class="release-date">Aug 28, 2020</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-fixed">Bugfix: List the categories in form select box even if the categories section is disabled on the homepage.</li>
+					<li class="ch-fixed">Bugfix: Salary fields format fixed.</li>
+					<li class="ch-fixed">Bugfix: URL when switching language fixed.</li>
+					<li class="ch-added">Option to hide homepage sections on small screens (e.g. mobile) added.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v6.0.0">Version 6.0.0
+					<small class="release-date">Aug 25, 2020</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Support for unlimited depth subcategories (ie Subcategory of subcategory of subcategory...).</li>
+					<li class="ch-added">Admin users can now feature ads in the homepage's carousel (using the <a href="https://codecanyon.net/item/offline-payment-plugin-for-laraclassified-and-jobclass/20765766" target="_blank">OfflinePayment</a> plugin) by a click.</li>
+					<li class="ch-added">Pricing page added (To list all available Packages by currency).</li>
+					<li class="ch-added">Option to force users to post ads from the Pricing page.</li>
+					<li class="ch-added">Promotion duration & Publication duration added to Packages (These override the global options when set).</li>
+					<li class="ch-added">All the included views also, can be customized in the <code>/extras/customizations/</code> dir.
+						<br><strong>NOTE:</strong> You must follow the same trees and names of views as the script's views.</li>
+					<li class="ch-updated">Installation process improved.</li>
+					<li class="ch-updated">And many more small improvements.</li>
+					<li class="ch-fixed">Minor bugfix.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v5.9.1">Version 5.9.1
+					<small class="release-date">July 22, 2020</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Default images optimized.</li>
+					<li class="ch-updated">Image upload & resize improved.</li>
+					<li class="ch-updated">Price number manipulation improved.</li>
+					<li class="ch-updated">SVG maps (af, in, ru) updated.</li>
+					<li class="ch-fixed">Minor bugfix.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v5.9.0">Version 5.9.0
+					<small class="release-date">July 15, 2020</small>
+				</h3>
+				<div class="callout callout-danger" role="alert">
+					<h4><strong>INFORMATION</strong></h4>
+					<ul>
+						<li><strong>This is a breaking update for the languages files and for the plugins.</strong></li>
+						<li>Many of languages files keys are changed.</li>
+						<li>The plugins folder has been moved from <code>/app/Plugins/</code> to <code>/extras/plugins/</code>.</li>
+					</ul>
+				</div>
+				<ul class="changelog">
+					<li class="ch-added">New great design for the Admin Panel.</li>
+					<li class="ch-added">Languages files edition from the Admin Panel.</li>
+					<li class="ch-added">Allow front views customization in the <code>/extras/customizations/</code> dir.
+						So it's now possible to extend the views without being overwritten in the next updates.
+						<strong>NOTE:</strong> You must follow the same trees and names of views as the script's views.</li>
+					<li class="ch-updated">Languages files keys updated to allow them to be editable from the Admin Panel.</li>
+					<li class="ch-updated">Green and Yellow styles CSS updated.</li>
+					<li class="ch-updated">Plugins folder has moved to make easier websites upgrades.</li>
+					<li class="ch-updated">Composer update.</li>
+					<li class="ch-updated">Minor Improvements.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v5.8.4">Version 5.8.4
+					<small class="release-date">June 13, 2020</small>
+				</h3>
+				<div class="callout callout-danger" role="alert">
+					<h4><strong>INFORMATION</strong></h4>
+					<ul>
+						<li>From the v7.0.0 the script requires PHP 7.2.5 or higher.</li>
+					</ul>
+				</div>
+				<ul class="changelog">
+					<li class="ch-added">TinyMCE, Summernote and CKEditor5 WYSIWYG editor added.</li>
+					<li class="ch-added">Geonames database updated (Available only for fresh installations).</li>
+					<li class="ch-updated">Many DB queries improved (using Laravel <code>->cursor()</code> feature).</li>
+					<li class="ch-updated">Prevent admin users to be banned.</li>
+					<li class="ch-updated">Blacklist - Cyrillic words also can be banned now.</li>
+					<li class="ch-updated">Check if MySQL driver is enabled for PDO on the server.</li>
+					<li class="ch-updated">Use the search area background image as og:image on the homepage.</li>
+					<li class="ch-fixed">Count ads by category feature fixed for non main languages.</li>
+					<li class="ch-fixed">User account: Saved searches pagination fixed.</li>
+					<li class="ch-fixed">Duplicate strings on Tags array fixed.</li>
+					<li class="ch-fixed">Reply title on Conversation page fixed.</li>
+					<li class="ch-updated">Composer update.</li>
+					<li class="ch-updated">Minor Improvements.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v5.8.3">Version 5.8.3
+					<small class="release-date">May 13, 2020</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Prevent wrong locale used in the setlocale() function.<br>NOTE: This fixes an historic <a
+							href="https://stackoverflow.com/questions/43589501/if-statements-not-working-correctly-on-laravel-blade" target="_blank">issue</a> with the Turkish language.</li>
+					<li class="ch-fixed">Minor bugs fixed.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v5.8.2">Version 5.8.2
+					<small class="release-date">May 2, 2020</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Show/hide password feature added.</li>
+					<li class="ch-updated">Feed improvements.</li>
+					<li class="ch-fixed">Bugs fixed.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v5.8.1">Version 5.8.1
+					<small class="release-date">Apr 28, 2020</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Maxmind database updated.</li>
+					<li class="ch-updated">npm packages updated.</li>
+					<li class="ch-fixed">Minor bugfix.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v5.8.0">Version 5.8.0
+					<small class="release-date">Apr 22, 2020</small>
+				</h3>
+				<div class="callout callout-danger" role="alert">
+					<h4><strong>INFORMATION</strong></h4>
+					<ul>
+						<li>From the v5.8.0 the script requires PHP 7.2.5 or higher.</li>
+					</ul>
+				</div>
+				<ul class="changelog">
+					<li class="ch-added">Laravel 7.x support added.</li>
+					<li class="ch-added">Postmark mail service added in the installer.</li>
+					<li class="ch-updated">Installer improved.</li>
+					<li class="ch-updated">Ads Clear Cmd improved. Greatly reduce your memory usage.</li>
+					<li class="ch-updated">CKEditor plugin removed (Security issue).</li>
+					<li class="ch-updated">Minor Improvements.</li>
+					<li class="ch-fixed">Bugfix: Feeds. + Languages Sync.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v5.7.4">Version 5.7.4
+					<small class="release-date">Dec 26, 2019</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Google+ share removed. WhatsApp share added.</li>
+					<li class="ch-fixed">Bugfix: Impersonate feature.</li>
+					<li class="ch-fixed">Bugfix: Twitter sharing encoding issue.</li>
+					<li class="ch-fixed">Bugfix: Admin panel reorder feature.</li>
+					<li class="ch-fixed">Bugfix: Minor CSS.</li>
+					<li class="ch-fixed">Bugfix: Failed to load resource: net::ERR_SPDY_PROTOCOL_ERROR.</li>
+					<li class="ch-updated">Distance Calculation Improved.</li>
+					<li class="ch-updated">Composer update.</li>
+					<li class="ch-updated">Minor Improvements.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v5.7.3">Version 5.7.3
+					<small class="release-date">Aug 16, 2019</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Improvement of the Distance Calculation Unit Conversion.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v5.7.2">Version 5.7.2
+					<small class="release-date">Aug 14, 2019</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-fixed">Bugfix: Distance Calculation Unit Conversion. Distances are now accurate.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v5.7.1">Version 5.7.1
+					<small class="release-date">Aug 8, 2019</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Upgrade system updated: Support for <a href="https://semver.org/" target="_blank">semver</a> added.</li>
+					<li class="ch-updated">Search Engine code improved. And MySQL strict mode is now supported.</li>
+					<li class="ch-updated">Geonames database files updated (Available only for fresh installations).</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-fixed">Bugs fixed.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v5.7">Version 5.7
+					<small class="release-date">Jul 15, 2019</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Admin panel: Options to protect & to hide phone numbers added.</li>
+					<li class="ch-added">Admin panel: Allow admin user to select the Distance Calculation Formula.</li>
+					<li class="ch-added">Allow admin users to ban links/URLs, email addresses and phone numbers from the ads/companies description.</li>
+					<li class="ch-added">More Backup Options added.</li>
+					<li class="ch-updated">Files Storage Improved.</li>
+					<li class="ch-updated">Prevent only numeric characters for ads & companies description fields.</li>
+					<li class="ch-fixed">LinkedIn login issue fixed.</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-fixed">Minor bugs fixed.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v5.6">Version 5.6
+					<small class="release-date">May 27, 2019</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Admin panel: Configurable Files & Images Upload settings added.</li>
+					<li class="ch-added">Admin panel: Option to clear images thumbnails.</li>
+					<li class="ch-added">Admin panel: Allow admin users to customize the robots.txt file.</li>
+					<li class="ch-added">Admin panel: Option to select the "Similar Ads" type (or disable it) on the Ads details page.</li>
+					<li class="ch-added">Allow admin users to ban ads authors on one click by visiting their ads details page.</li>
+					<li class="ch-updated">Carousel auto-play loop (if enabled) added for mobile display.</li>
+					<li class="ch-fixed">"Offline" button in users area fixed.</li>
+					<li class="ch-fixed">Ads details page Tabs display fixed.</li>
+					<li class="ch-fixed">Multi-countries routes file generation (during the first SEO settings save).</li>
+					<li class="ch-fixed">Observers (Post, Picture, Payment & Payment Method) cache clear fixed.</li>
+					<li class="ch-updated">Minor improvements.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v5.5">Version 5.5
+					<small class="release-date">Apr 30, 2019</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-fixed">Bugs fixed.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v5.4">Version 5.4
+					<small class="release-date">Apr 28, 2019</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Support for Laravel 5.8.* added.</li>
+					<li class="ch-added">Admin panel: Add link on IP addresses</li>
+					<li class="ch-updated">Front: Redirect admin users to the Admin panel.</li>
+					<li class="ch-updated">Minimum file upload size added in the settings.</li>
+					<li class="ch-fixed">Minor bugs fixed.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v5.3">Version 5.3
+					<small class="release-date">Apr 4, 2019</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Admin panel: Optimization Settings added.</li>
+					<li class="ch-updated">"Ads Cleaner" command renamed to "Ads Clear".</li>
+					<li class="ch-updated">Usage of the Laravel Task Scheduling in the Cron Job tab.</li>
+					<li class="ch-fixed">Bugs fixed.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v5.2">Version 5.2
+					<small class="release-date">Mar 30, 2019</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Some improvements.</li>
+					<li class="ch-fixed">Bugs fixed.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v5.1">Version 5.1
+					<small class="release-date">Mar 22, 2019</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-fixed">Known bugs fixed.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v5.0">Version 5.0
+					<small class="release-date">Mar 18, 2019</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">(Browser or Website Country) Language Auto Detection and Selection</li>
+					<li class="ch-added">Admin panel: New settings added.</li>
+					<li class="ch-added">Homepage: New options to count ads belong to cities and/or categories.</li>
+					<li class="ch-added">Support for Google reCAPTCHA v2 and v3.</li>
+					<li class="ch-updated">Google reCAPTCHA integration improved.</li>
+					<li class="ch-updated">Many minor improvements.</li>
+					<li class="ch-updated">Composer packages updated.</li>
+					<li class="ch-fixed">Simditor WYSIWYG CSS overwritten fixed.</li>
+					<li class="ch-fixed">Minor bugs fixes.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v4.9">Version 4.9
+					<small class="release-date">Feb 21, 2019</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Allow admin user to select a form type for ads creation and edition ("Multi Steps Form" or "Single Step Form")</li>
+					<li class="ch-added">Admin panel: New settings added.</li>
+					<li class="ch-added">Add font color function in Simditor WYSIWYG.</li>
+					<li class="ch-updated">Social Network Login improved (LinkedIn & Twitter login added. Google+ login can be removed).</li>
+					<li class="ch-updated">Laravel 5.8 deprecated functions (String and Array Helpers) cleared.</li>
+					<li class="ch-updated">Simditor WYSIWYG translation added.</li>
+					<li class="ch-updated">Many minor improvements.</li>
+					<li class="ch-updated">Composer packages updated.</li>
+					<li class="ch-fixed">Bugfix: Resource interpreted as Stylesheet but transferred with MIME type application/javascript (in the latest version of Chrome)</li>
+					<li class="ch-fixed">Minor bugs fixes.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v4.8">Version 4.8
+					<small class="release-date">Jan 26, 2019</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Improvement of the Custom Validators Rules.</li>
+					<li class="ch-updated">IETF language tag(s) added for JS locale(s)</li>
+					<li class="ch-added">Instagram URL added in Social Network list displayed in the footer.</li>
+					<li class="ch-fixed">Bugfix: Ajax upload error container.</li>
+					<li class="ch-updated">Composer packages updated.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v4.7">Version 4.7
+					<small class="release-date">Jan 14, 2019</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Users auto-registration from ads creation form added.</li>
+					<li class="ch-added">Feature to put manually ads offline added.</li>
+					<li class="ch-updated">Admin panel settings: New settings added.</li>
+					<li class="ch-updated">Composer packages updated.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v4.6">Version 4.6
+					<small class="release-date">Jan 3, 2019</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-fixed">Bugfix: .cat-list > ul.collapse on mobile (HTML Sitemap Page)</li>
+					<li class="ch-fixed">Bugfix: Prevent the default language deactivation</li>
+					<li class="ch-updated">Composer packages updated.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v4.5">Version 4.5
+					<small class="release-date">Dec 6, 2018</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Frontend: Bootstrap 4.x support added.</li>
+					<li class="ch-added">Confirmation Emails sending feature added.</li>
+					<li class="ch-updated">Usage of the Laravel default Email Notification feature.</li>
+					<li class="ch-updated">AdsCleaner command improved.</li>
+					<li class="ch-updated">Composer packages updated.</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-fixed">Minor bugs fixes.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v4.4">Version 4.4
+					<small class="release-date">Oct 8, 2018</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Support for Laravel 5.7.*</li>
+					<li class="ch-updated">Admin panel, Lists/Details improved.</li>
+					<li class="ch-updated">Words blacklist option improved.</li>
+					<li class="ch-updated">Invalidate banned users access from social (Facebook/Google) login.</li>
+					<li class="ch-updated">Remove the User and all the Posts related to a banned email address.</li>
+					<li class="ch-updated">Composer packages updated.</li>
+					<li class="ch-fixed">Minor bugs fixes.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v4.3">Version 4.3
+					<small class="release-date">Aug 18, 2018</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Improvement of the Admin panel Dashboard.</li>
+					<li class="ch-updated">Minor code improvements.</li>
+					<li class="ch-fixed">Admin panel, Details Lists: CSS bugs fixes (for Windows users).</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v4.2">Version 4.2
+					<small class="release-date">Aug 9, 2018</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-fixed">
+						Security vulnerability fixed
+						(mentioned in the <a href="https://laravel.com/docs/5.6/upgrade#upgrade-5.6.30" target="_blank">Laravel v5.6.30</a> Security Release).
+					</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v4.1">Version 4.1
+					<small class="release-date">Jul 31, 2018</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-fixed">Bugs fixes.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v4.0">Version 4.0
+					<small class="release-date">Jul 30, 2018</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Admin panel: User Roles and Permissions (ACL) system added.</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-fixed">Bugs fixes.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v3.9">Version 3.9
+					<small class="release-date">Jun 9, 2018</small>
+				</h3>
+				<div class="callout callout-danger" role="alert">
+					<h4><strong>INFORMATION</strong></h4>
+					<ul>
+						<li>By upgrading your website to the v3.9 you have to activate all the purchased plugins (add-ons) from the Admin panel &rarr; Plugins.</li>
+					</ul>
+				</div>
+				<ul class="changelog">
+					<li class="ch-added">More backup features added (to prevent data losing).</li>
+					<li class="ch-added">Ability to disable the ads report pages indexation on the search engines added.</li>
+					<li class="ch-added">Ability to hide all the footer links added.</li>
+					<li class="ch-added">Cities columns option added in the homepage location area management.</li>
+					<li class="ch-updated">Admin panel: Languages creation/edition forms improved.</li>
+					<li class="ch-updated">Allow admin to force UTF-8 encoding for Dates (to prevent the Dashboard Charts display issue).</li>
+					<li class="ch-updated">Create a new token if the post or user (email/phone number) is marked as unverified.</li>
+					<li class="ch-updated">Minor improvements.</li>
+					<li class="ch-fixed">Bugs fixes.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v3.8">Version 3.8
+					<small class="release-date">May 12, 2018</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Admin panel: Bulk Items Deletion added.</li>
+					<li class="ch-fixed">HTTPS support fixed.</li>
+					<li class="ch-updated">Minor improvements.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v3.7">Version 3.7
+					<small class="release-date">May 4, 2018</small>
+				</h3>
+				<div class="callout callout-danger" role="alert">
+					<h4><strong>INFORMATION</strong></h4>
+					<ul>
+						<li>From the v3.7 the script requires PHP 7.1.3 or higher.</li>
+						<li>If your current version is v3.1 or lower, you have to read the <a href="#v3.2">v3.2 caution</a> before starting the upgrade.</li>
+						<li>You have to clear your browser cache after the upgrade.</li>
+					</ul>
+				</div>
+				<ul class="changelog">
+					<li class="ch-added">Support for Laravel 5.6.* (with several Laravel Security Fixes).</li>
+					<li class="ch-added">Synchronization of missing lines of languages files during the website upgrade, or through the Admin.</li>
+					<li class="ch-added">Allow categories to accept pictures as icons.</li>
+					<li class="ch-added">More options for the homepage categories area management.</li>
+					<li class="ch-added">New Messages Auto-Checking (with configurable timer) feature added.</li>
+					<li class="ch-added">Enable/Disable the "Cities extended searches" from the Admin panel.</li>
+					<li class="ch-added">The Admin panel list pages is now responsive.</li>
+					<li class="ch-added">Cookie Consent Alert (to comply for EU law). Can be enabled from the Admin panel.</li>
+					<li class="ch-added">Display the County (or State) when selecting cities (in cities suggestion).</li>
+					<li class="ch-updated">Optimization of Laravel Eloquent Queries with Eager Loading (to accept large databases)</li>
+					<li class="ch-updated">The system no longer removes the 'included languages' files on languages deletion.</li>
+					<li class="ch-updated">Replace the 'Packages' step by 'Payment' in ads posting process.</li>
+					<li class="ch-updated">Number Of Views/Items Counter: Shorten long numbers to K/M/B.</li>
+					<li class="ch-updated">HTML Sitemap page improved.</li>
+					<li class="ch-fixed">XML Sitemaps fixed (Bug appeared by activating the multi-countries feature).</li>
+					<li class="ch-fixed">Bug fixes.</li>
+					<li class="ch-updated">Minor improvements.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v3.6">Version 3.6
+					<small class="release-date">February 21, 2018</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-fixed">Various bug fixes.</li>
+					<li class="ch-updated">Minor improvements.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v3.4">Version 3.4
+					<small class="release-date">February 14, 2018</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Upgrade process improved.</li>
+					<li class="ch-updated">robots.txt file generation improved.</li>
+					<li class="ch-fixed">Ads Single Page slug regex fixed (for the ads permalink: {slug}/{id}).</li>
+					<li class="ch-fixed">Missing languages entries added.</li>
+					<li class="ch-fixed">Users area: Broken link fixed in Top Menu.</li>
+					<li class="ch-added">Allow the admin to put the website in Maintenance Mode.</li>
+					<li class="ch-updated">Minor improvements.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v3.3">Version 3.3
+					<small class="release-date">February 6, 2018</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-fixed">Bug Fixes (Fix the "Warning: count()" errors on PHP 7.2+)</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v3.2">Version 3.2
+					<small class="release-date">February 2, 2018</small>
+				</h3>
+				<div class="callout callout-danger" role="alert">
+					<h4><strong>CAUTION</strong></h4>
+					<p>This is a special and big update. And by upgrading your website to the v3.2 it's important to know that:</p>
+					<ul>
+						<li>You will lose all your <code>Admin panel -> Settings</code> entries, and you will need to setup your website again.</li>
+						<li>You will lose all the current internal messages (that were also sent by email address to their receivers)</li>
+						<li>If you want to re-activate the ads review (ads approbation) option, all the existing ads will be approved automatically.</li>
+						<li>You will need to (uninstall and) re-install all the script's plugins after the upgrade.</li>
+						<li>You will lose all the plugins data and settings (except the payment plugins transactions entries).</li>
+					</ul>
+				</div>
+				<ul class="changelog">
+					<li class="ch-added">Full Messaging System (between Recruiters & Job Seekers) added</li>
+					<li class="ch-added">Allow admins to re-approve the ads on (title or description) modification (If the ads approbation option is enable)</li>
+					<li class="ch-added">Admin panel: Impersonation feature (Authenticate as your users)</li>
+					<li class="ch-added">Admin panel: New way to manage Settings</li>
+					<li class="ch-added">Options to setup the Default Date & Datetime format</li>
+					<li class="ch-added">Options to customize the theme's style</li>
+					<li class="ch-added">Options to setup the Default Distances on the search page</li>
+					<li class="ch-added">Options to setup the Jobs (single page) permalink</li>
+					<li class="ch-added">Options to Allow/Disallow users to pay the Packages in their country currency</li>
+					<li class="ch-added">Options to setup the footer (Hide the payment plugins logos, Enter the 'Powered by' info, etc.)</li>
+					<li class="ch-added">Admin panel: More Options to setup the Homepage Sections</li>
+					<li class="ch-added">Admin panel: Advanced filters added (Ads, Users & Payments list)</li>
+					<li class="ch-updated">Simplemaps.com's SVG Maps updated</li>
+					<li class="ch-updated">Geonames database files updated (Available only for fresh installations)</li>
+					<li class="ch-updated">Installation process improved</li>
+					<li class="ch-updated">No longer crop the companies logos</li>
+					<li class="ch-updated">No longer use <code>async:false</code> in jQuery.ajax() on the ads creation/edition forms (deprecated)</li>
+					<li class="ch-updated">Admin panel: The sorting orderable columns feature improved</li>
+					<li class="ch-updated">Many Minor Improvements</li>
+					<li class="ch-fixed">Bug Fixes</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v3.1">Version 3.1
+					<small class="release-date">November 28, 2017</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-fixed">Bug Fixes:</li>
+					<li class="ch-updated">- Reorder Payment Methods</li>
+					<li class="ch-updated">- HTTPS for Google fonts URL</li>
+					<li class="ch-updated">- Homepage Carousel filter</li>
+					<li class="ch-updated">Minor Improvements</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v3.0">Version 3.0
+					<small class="release-date">November 20, 2017</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Front: Support for RTL added (Front)</li>
+					<li class="ch-added">RSS feeds generator added (domain.tld/feed)</li>
+					<li class="ch-added">Fresh Installation: Arabic language added</li>
+					<li class="ch-added">Pages Header: Auto-rotate images based on their orientation using Exif data<br>
+						(NOTE: To enable this feature, you have just to enable the PHP Exif extension on your server)
+					</li>
+					<li class="ch-updated">Match the packages currency to the countries currency (NOTE: You have to create a package per currency)</li>
+					<li class="ch-updated">Home Header improved: Enable to set a background image per country</li>
+					<li class="ch-updated">Add salary type in the job details page</li>
+					<li class="ch-updated">New Language Addition: When auto-copying categories, make the 'slug' column unique using the new language code</li>
+					<li class="ch-fixed">Non latin characters are now accepted for tags</li>
+					<li class="ch-fixed">Right translation of dates on the jobs details page</li>
+					<li class="ch-fixed">Language deletion issue fixed</li>
+					<li class="ch-fixed">Minor Bug Fixes</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v2.9">Version 2.9
+					<small class="release-date">November 3, 2017</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Home Header section improved (More Options added)</li>
+					<li class="ch-updated">Home Latest & Sponsored Ads sections ("Order By" option added)</li>
+					<li class="ch-fixed">Tags format validation added (to prevent 404 error)</li>
+					<li class="ch-fixed">Admin panel, MetaTags validation (Edit Mode)</li>
+					<li class="ch-fixed">Admin panel, City validation (Edit Mode)</li>
+					<li class="ch-fixed">Display archived jobs in user's area</li>
+					<li class="ch-fixed">Display the right date for deleting in the "Archived post expiration" email</li>
+					<li class="ch-fixed">Carousel header/title margin for mobile display</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v2.8">Version 2.8
+					<small class="release-date">October 24, 2017</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">The upgrade section in the documentation is updated</li>
+					<li class="ch-updated">Admin users can now add and/or remove Meta-Tags for specific pages</li>
+					<li class="ch-updated">Home Sections management improved (More Options for the sections)</li>
+					<li class="ch-updated">Small improvements</li>
+					<li class="ch-added">Quick countries selection added</li>
+					<li class="ch-added">External link option added for pages</li>
+					<li class="ch-added">The value of search radius distance can be edited from the /.env file (<a
+							href="http://support.bedigit.com/help-center/articles/64/default-value-of-search-radius-distance" target="_blank">More info</a>)
+					</li>
+					<li class="ch-fixed">Bugfix: Don't update the current password if the password field is empty (Admin panel -> My Account)</li>
+					<li class="ch-fixed">Bugfix: WYSIWYG editor links with target attribute support (Ad Submission Form)</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v2.7">Version 2.7
+					<small class="release-date">October 13, 2017</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Homepage header improved</li>
+					<li class="ch-updated">Footer improved</li>
+					<li class="ch-updated">Registration via Social Login improved</li>
+					<li class="ch-fixed">Minor Bug Fixes</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v2.6">Version 2.6
+					<small class="release-date">October 9, 2017</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Multi Companies & Resumes features added</li>
+					<li class="ch-added">Jobs application with an external URL feature added</li>
+					<li class="ch-added">Companies listing + Companies page added</li>
+					<li class="ch-added">Allow only logged users to contact recruiters</li>
+					<li class="ch-added">Quick Login added</li>
+					<li class="ch-added">Tags (and meta-tags keywords for ads page) feature added</li>
+					<li class="ch-added">Laravel 5.5.14 supported (with a Laravel Security Fix)</li>
+					<li class="ch-updated">Improvement of the similar jobs selection on the jobs page (displaying jobs from the same parent category instead of the near location)
+					</li>
+					<li class="ch-updated">HTML Minify feature improved</li>
+					<li class="ch-updated">Search filters improved</li>
+					<li class="ch-updated">Minor improvements</li>
+					<li class="ch-fixed">Fixed: Google Adsense responsive ads supported</li>
+					<li class="ch-fixed">Fixed: Google Analytics new tracking code supported</li>
+					<li class="ch-fixed">Fixed: UK mobile phone verification</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v2.5">Version 2.5
+					<small class="release-date">September 4, 2017</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Support for Laravel 5.5</li>
+					<li class="ch-updated">Upgrading's process improved (check and launch automatically after files updated)</li>
+					<li class="ch-fixed">Bugfix: Cron Job Command</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v2.4">Version 2.4
+					<small class="release-date">September 1, 2017</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Installation process improved (Made easy for Shared servers)</li>
+					<li class="ch-updated">
+						Upgrading's process improved<br>
+						(By making an upgrade, you could upgrade automatically all the missed versions (even from v1.0 to the latest version))
+					</li>
+					<li class="ch-updated">Pages layout size increased & Header improved</li>
+					<li class="ch-updated">Minor improvements (select2 cities selection, etc.)</li>
+					<li class="ch-fixed">Bugfix</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v2.3">Version 2.3
+					<small class="release-date">August 16, 2017</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Pictures versioning feature added (To clear browsers cache if need)</li>
+					<li class="ch-fixed">Phone number format fixed for Twilio (Add "+" to the phone numbers if missing)</li>
+					<li class="ch-fixed">Administrative Divisions selection fixed</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v2.2">Version 2.2
+					<small class="release-date">August 14, 2017</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-fixed">Bugfix (Cache - Remove use of rememberForever())</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v2.1">Version 2.1
+					<small class="release-date">August 11, 2017</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Minor improvements (mix() URL for CSS & JS)</li>
+					<li class="ch-fixed">Minor bug fixed</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v2.0">Version 2.0
+					<small class="release-date">August 7, 2017</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Sub-categories support added</li>
+					<li class="ch-added">Homepage customization (from the Admin panel)</li>
+					<li class="ch-added">SVG Maps colors and sizes edition (from the Admin panel)</li>
+					<li class="ch-added">Twilio and Nexmo APIs integration (Account verification by SMS)</li>
+					<li class="ch-added">Users can now log in with mobile phone number or email address or username</li>
+					<li class="ch-added">Read and reply to the users messages (Authors messaging system)</li>
+					<li class="ch-added">User's transactions list (Users area)</li>
+					<li class="ch-added">Possibility of limiting a payment method to one or more countries</li>
+					<li class="ch-added">Sparkpost Mail API supported</li>
+					<li class="ch-added">"Resend Mail or SMS verification" feature (Get more users with valid email or phone number)</li>
+					<li class="ch-added">Multi-language meta-tags manager (Admin panel)</li>
+					<li class="ch-added">Laravel 5.4 supported</li>
+					<li class="ch-updated">Installation process improved</li>
+					<li class="ch-updated">The ads creation process is improved (with submission by steps)</li>
+					<li class="ch-updated">The locations fields are removed (from the posting form)</li>
+					<li class="ch-updated">Locations and cities management improved (Admin panel)</li>
+					<li class="ch-updated">Optimizing Database Performance</li>
+					<li class="ch-updated">Improving Loading Performance (Less SQL queries, Combine & Minify some CSS/JS files)</li>
+					<li class="ch-updated">And many more small improvements</li>
+					<li class="ch-fixed">Minor bugs fixed</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v1.9">Version 1.9
+					<small class="release-date">April 6, 2017</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Installation process improved</li>
+					<li class="ch-updated">Page option to exclude some pages from the footer links added</li>
+					<li class="ch-updated">Files upload and storage improved</li>
+					<li class="ch-updated">User area's lists (my ads, favorites ads, etc.) pagination added</li>
+					<li class="ch-updated">Increase the number of characters for the Custom CSS and Tracking Code options</li>
+					<li class="ch-updated">Un-featured premium ads after package expiration</li>
+					<li class="ch-updated">Redirect new users to the user area if Users activation is not required</li>
+					<li class="ch-updated">Separation of employer account features from candidate account</li>
+					<li class="ch-added">Setting to change the default favicon</li>
+					<li class="ch-added">Setting for unactivated, activated and archived ads expiration</li>
+					<li class="ch-added">Setting to change default supported images extensions</li>
+					<li class="ch-added">Setting to change default supported files extensions</li>
+					<li class="ch-added">Sending transactional emails with a dedicated email address</li>
+					<li class="ch-added">Email notification to the admin users on new registration (with the social login)</li>
+					<li class="ch-added">Plugin system added</li>
+					<li class="ch-fixed">The tips (broken) link is fixed on the ads details page</li>
+					<li class="ch-updated">And many more small improvements</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v1.8">Version 1.8
+					<small class="release-date">February 17, 2017</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Improvement : New Admin Panel login page</li>
+					<li class="ch-updated">Improvement : New Admin Panel Dashboard</li>
+					<li class="ch-updated">Improvement : Manage ads per page in search results (from the Panel)</li>
+					<li class="ch-updated">Improvement : Decimals numbers (salary) support</li>
+					<li class="ch-updated">Improvement : Russian pluralization support</li>
+					<li class="ch-updated">And many more small improvements</li>
+					<li class="ch-added">AJAX checkbox to activate/deactivate settings (from the Panel)</li>
+					<li class="ch-added">WYSIWYG Editors</li>
+					<li class="ch-added">Dynamics pages editor (for statics pages)</li>
+					<li class="ch-added">Decimals Superscript support</li>
+					<li class="ch-added">Manage Admin Panel theme colors</li>
+					<li class="ch-added">Admin Panel translations</li>
+					<li class="ch-fixed">Remove translated entries on language deletion</li>
+					<li class="ch-fixed">Add jobs to favorites from jobs details page</li>
+					<li class="ch-fixed">URL base of the search page filters</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v1.7">Version 1.7
+					<small class="release-date">February 3, 2017</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Improvement : Copy all language files and data by creating new language</li>
+					<li class="ch-updated">Improvement : User's saved searches display</li>
+					<li class="ch-updated">Improvement : Registered users can disable comments on their ads</li>
+					<li class="ch-updated">Improvement : AdsCleaner command</li>
+					<li class="ch-updated">Improvement : Logged user's area</li>
+					<li class="ch-fixed">User's favourite ads removal</li>
+					<li class="ch-fixed">Banned users can no longer log in</li>
+					<li class="ch-fixed">Search results (search by city after by region)</li>
+					<li class="ch-fixed">Sitemaps 404 error when language code and country code are identical</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v1.6">Version 1.6
+					<small class="release-date">January 24, 2017</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-updated">Improvement : Admin panel</li>
+					<li class="ch-updated">Improvement : Payment system</li>
+					<li class="ch-updated">Removal the "Title/Gender" field from the registration form</li>
+					<li class="ch-added">Setting for the max upload file size from the admin panel</li>
+					<li class="ch-added">Send notification emails to admin users (on new user or ad)</li>
+					<li class="ch-added">Translation data are kept when default language is changed</li>
+					<li class="ch-added">Activate/Deactivate categories with their children if exist</li>
+					<li class="ch-added">Activate/Deactivate translated entries with their translations if exist</li>
+					<li class="ch-added">Admin users can now add unlimited Packs and can delete them</li>
+					<li class="ch-added">Automatic creation of translated entries (when creating the main entry)</li>
+					<li class="ch-added">Automatic update for all non translatable fields (from main entry)</li>
+					<li class="ch-added">New upload tool (in admin panel)</li>
+					<li class="ch-added">Send (both to user and admin users) notification email on new payement</li>
+					<li class="ch-added">Setting to activate/deactivate all admin users notifications</li>
+					<li class="ch-added">Users can now upgrade their existing ads (by making a payment)</li>
+					<li class="ch-added">Ad's badge added for paid ads (when you visit the ad)</li>
+					<li class="ch-added">A blank CSS file (custom.css) for more CSS customization</li>
+					<li class="ch-fixed">Menu mobile view issue</li>
+					<li class="ch-fixed">Language files for the use of the plural in the Russian language</li>
+					<li class="ch-fixed">HTTP Cache activation (white page)</li>
+					<li class="ch-fixed">Saving searches results</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v1.5">Version 1.5
+					<small class="release-date">December 16, 2016</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-fixed">Search page links (with query string)</li>
+					<li class="ch-fixed">multi-language POST login and logout redirect</li>
+					<li class="ch-fixed">Add new cities from the Admin panel (manually)</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v1.4">Version 1.4
+					<small class="release-date">December 8, 2016</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Social login on SignUp page</li>
+					<li class="ch-updated">Transactional email (for Amazon SES)</li>
+					<li class="ch-fixed">Ads visits counter</li>
+					<li class="ch-fixed">Search by city (ignore the svg map parameter if the city ID is provided)</li>
+					<li class="ch-fixed">AdsCleaner command</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v1.3">Version 1.3
+					<small class="release-date">November 29, 2016</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Country locations databases installation feature (from the admin panel)</li>
+					<li class="ch-added">Simplified activation of ads and users by an ajax call (from the admin panel)</li>
+					<li class="ch-added">Mini stats on the admin panel dashboard</li>
+					<li class="ch-fixed">Timezone, Loc.admin1 & Loc.admin2 edit form (from the admin panel)</li>
+					<li class="ch-fixed">Find the most populated city in region (state) or in country</li>
+					<li class="ch-fixed">Distance between cities on search page</li>
+					<li class="ch-fixed">Latest jobs list (on homepage) for review activation</li>
+					<li class="ch-fixed">Guests can post Ads</li>
+					<li class="ch-fixed">XML sitemaps generation</li>
+					<li class="ch-fixed">Improved: HTTPS protocol usage</li>
+					<li class="ch-updated">And many more small improvements</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v1.2">Version 1.2
+					<small class="release-date">November 23, 2016</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-added">Laravel 5.3 support</li>
+					<li class="ch-added">HTTPS support added (Please check the .htaccess)</li>
+					<li class="ch-added">Admin panel: Meta tag description field added in settings area</li>
+					<li class="ch-fixed">Search by date intervals fixed (on the left sidebar of results page)</li>
+					<li class="ch-fixed">UK flag fixed</li>
+					<li class="ch-fixed">Reset password (from admin panel) fixed</li>
+					<li class="ch-updated">Installation process improved</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v1.1">Version 1.1
+					<small class="release-date">November 15, 2016</small>
+				</h3>
+				<ul class="changelog">
+					<li class="ch-fixed">Duplicate content links fixed for multi-countries website</li>
+					<li class="ch-fixed">Small bugs fixed</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h3 id="v1.0">Version 1.0
+					<small class="release-date">November 14, 2016</small>
+				</h3>
+				<p>Initial release.</p>
+			</section>
+		
+		
+		</article>
+		<!-- END Main content -->
+	</div>
+</main>
+
+
+<!-- Footer -->
+<footer class="site-footer">
+	<div class="container">
+		<a id="scroll-up" href="#"><i class="fa fa-angle-up"></i></a>
+		
+		<div class="row">
+			<div class="col-md-6 col-sm-6">
+				<p>Copyright &copy;
+					<script>document.write(new Date().getFullYear())</script>
+					. All right reserved
+				</p>
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<ul class="footer-menu">
+					<li><a href="changelog.html">Changelog</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- END Footer -->
+
+<!-- Scripts -->
+<script src="assets/js/theDocs.all.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+.gallery-container {
+	display: block;
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.bx-wrapper {
+	border-radius: 6px;
+	margin-bottom: 15px;
+}
+.bx-wrapper img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	text-align: center;
+	cursor: pointer;
+}
+.bxslider img {
+	border-radius: 6px;
+}
+
+.bx-wrapper .bx-prev,
+.bx-wrapper .bx-next {
+	background: none !important;
+}
+.bx-wrapper:hover .bx-controls-direction a:after {
+	opacity: 1;
+}
+
+.bxslider-pager {
+	text-align: center;
+}
+.bxslider-pager .bx-thumb-item {
+	border-bottom: 4px solid #ccc;
+	display: inline-block;
+	float: none;
+	height: 70px;
+	margin: 0 2px;
+	outline: medium none;
+	overflow: hidden;
+	position: relative;
+	width: 100px;
+}
+.bxslider-pager .bx-thumb-item img {
+	width: 100%;
+	max-width: 100%;
+	border-radius: 3px;
+	opacity: 0.7;
+	-webkit-transition: opacity 0.15s ease-in-out 0s;
+	-moz-transition: opacity 0.15s ease-in-out 0s;
+	-o-transition: opacity 0.15s ease-in-out 0s;
+	transition: opacity 0.15s ease-in-out 0s;
+}
+.bxslider-pager .bx-thumb-item:focus {
+	box-shadow: 0 0 2px #369;
+	outline: none;
+}
+.bxslider-pager .bx-thumb-item.active {
+	border-bottom: 4px solid #369;
+}
+.bxslider-pager .bx-thumb-item.active img,
+.bxslider-pager .bx-thumb-item:hover img {
+	opacity: 1;
+}
+
+@media (max-width: 640px) {
+	.gallery-container .bx-wrapper {
+		margin-bottom: 10px;
+	}
+	
+	.bxslider-pager .bx-thumb-item {
+		height: 48px;
+		width: 64px;
+	}
+}

@@ -1,0 +1,102 @@
+.gallery-container {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+/* Main gallery */
+.main-gallery {
+	float: right;
+	width: calc(100% - 120px);
+	--swiper-navigation-color: #666;
+	--swiper-pagination-color: #666;
+	/* height: 400px; /* Optional */
+}
+.main-gallery .swiper-slide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	background: #fff;
+	border: 1px solid #e9e9e9;
+	border-radius: 6px;
+}
+/* Apply shadow for the main gallery */
+.main-gallery .swiper-slide {
+	-moz-box-shadow: 0 0 5px #ccc;
+	-webkit-box-shadow: 0 0 5px #ccc;
+	box-shadow: 0 0 5px #ccc;
+	border: 5px solid #fff;
+	background: #fff;
+	border-radius: 6px;
+}
+.main-gallery .swiper-slide img {
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+/* Main gallery navigation buttons */
+.main-gallery .swiper-button-prev:after,
+.main-gallery .swiper-button-next:after {
+	background: rgba(0,0,0,.3);
+	border-radius: 3px;
+	color: #fff;
+	content: "nexts";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-size: 200%;
+	line-height: 1.3;
+	padding: 5px;
+	position: absolute;
+	text-align: center;
+	text-indent: 0;
+	opacity: 0;
+	-webkit-transition: all .15s ease-in-out 0s;
+	-moz-transition: all .15s ease-in-out 0s;
+	-o-transition: all .15s ease-in-out 0s;
+	transition: all .15s ease-in-out 0s;
+}
+.main-gallery .swiper-button-prev:after {
+	content: '\f053';
+	left: 0;
+}
+.main-gallery .swiper-button-next:after {
+	content: '\f054';
+	right: 0;
+}
+.main-gallery:hover .swiper-button-prev:after,
+.main-gallery:hover .swiper-button-next:after {
+	opacity: 1;
+}
+.main-gallery .swiper-button-prev:hover:after,
+.main-gallery .swiper-button-next:hover:after {
+	background: rgba(0,0,0,.6);
+}
+
+/* Thumbnails gallery */
+.thumbs-gallery {
+	float: left;
+	width: 100%;
+	height: 400px;
+	margin-left: 20px;
+}
+.thumbs-gallery .swiper-slide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	cursor: pointer;
+	opacity: 0.4;
+	border-bottom: 4px solid #ccc;
+}
+.thumbs-gallery .swiper-slide img {
+	width: 100%;
+	transition: 0.3s;
+}
+.thumbs-gallery .swiper-slide.swiper-slide-active,
+.thumbs-gallery .swiper-slide.swiper-slide-thumb-active {
+	opacity: 1;
+}
